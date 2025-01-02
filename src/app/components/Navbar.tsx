@@ -24,9 +24,10 @@ const Navbar = () => {
             <li><Link href="/tickets">Tickets</Link></li>
           </ul>
         </div>
-        
-            <BSALogo  classname="w-full btn btn-ghost normal-case" />
-      </div>
+            <Link href="/">
+              <BSALogo  classname="w-full btn btn-ghost normal-case" />
+            </Link>
+        </div>
       
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
