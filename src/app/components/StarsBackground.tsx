@@ -37,7 +37,7 @@ const StarsBackground = () => {
               quantity: 4,
             },
             repulse: {
-              distance: 200,
+              distance: 50, // Reduced repulse distance
               duration: 0.4,
             },
           },
@@ -63,7 +63,7 @@ const StarsBackground = () => {
               default: "bounce",
             },
             random: false,
-            speed: 2,
+            speed: 0.5, // Slower particle speed
             straight: false,
           },
           number: {
