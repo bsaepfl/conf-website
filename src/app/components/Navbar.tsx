@@ -1,10 +1,11 @@
 'use client'
 import Link from 'next/link'
 import Image from 'next/image'
+import BSALogo from '../images/hero/BSALogo'
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-base-100 shadow-lg fixed top-0 z-50">
+    <div className="navbar bg-base-300 shadow-lg fixed top-0 z-50">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -23,10 +24,8 @@ const Navbar = () => {
             <li><Link href="/tickets">Tickets</Link></li>
           </ul>
         </div>
-        <Link href="/" className="btn btn-ghost normal-case text-xl">
-          {/* Replace with your conference logo */}
-          Conference Logo
-        </Link>
+        
+            <BSALogo  classname="w-full btn btn-ghost normal-case" />
       </div>
       
       <div className="navbar-center hidden lg:flex">
@@ -44,7 +43,7 @@ const Navbar = () => {
       
       <div className="navbar-end">
         {/* You might want to add a language selector or login button here */}
-        <Link href="/tickets" className="btn btn-primary">Tickets</Link>
+        <Link href="/tickets" className="btn ">Tickets</Link>
       </div>
     </div>
   )
