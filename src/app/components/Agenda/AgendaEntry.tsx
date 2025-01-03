@@ -2,7 +2,23 @@
 import React from 'react';
 import Image from 'next/image';
 
-const AgendaEntry = ({ entry, index }) => {
+// src/types/AgendaEntry.ts
+export interface AgendaEntryType {
+  icon: string;
+  name: string;
+  date: string;
+  place: string;
+  speakers: string[];
+  resume: string;
+  track: string;
+}
+
+interface AgendaEntryProps {
+  entry: AgendaEntryType;
+  index: number;
+}
+
+const AgendaEntry: React.FC<AgendaEntryProps> = ({ entry, index }) => {
   const date = new Date(entry.date).toLocaleDateString();
 
   return (

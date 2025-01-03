@@ -3,9 +3,10 @@
 import React, { useState } from 'react';
 import AgendaEntry from './AgendaEntry';
 import StarsBackground from '../StarsBackground';
+import { AgendaEntryType } from './AgendaEntry';
 import placeholder from '../../images/tickets/placeholder.webp';
 
-const agendaData = [
+const agendaData: AgendaEntryType[] = [
   {
     icon: placeholder,
     name: 'Event 1',
@@ -36,9 +37,9 @@ const agendaData = [
   // Add more entries as needed
 ];
 
-const AgendaTable = () => {
-  const [filter, setFilter] = useState('');
-  const [sortOrder, setSortOrder] = useState('asc');
+const AgendaTable: React.FC = () => {
+  const [filter, setFilter] = useState<string>('');
+  const [sortOrder, setSortOrder] = useState<'asc' | 'desc'>('asc');
 
   const handleSort = () => {
     setSortOrder((prevSortOrder) => (prevSortOrder === 'asc' ? 'desc' : 'asc'));
@@ -51,7 +52,7 @@ const AgendaTable = () => {
     .sort((a, b) => {
       const dateA = new Date(a.date);
       const dateB = new Date(b.date);
-      return sortOrder === 'asc' ? dateA - dateB : dateB - dateA;
+      return sortOrder === 'asc' ? dateA.getTime() - dateB.getTime() : dateB.getTime() - dateA.getTime();
     });
 
   return (
@@ -60,7 +61,7 @@ const AgendaTable = () => {
       <div className="relative z-10 mb-4">
         <input
           type="text"
-          placeholder="Search by name"
+          placeholder="Filter by name"
           className="input input-bordered w-full max-w-xs"
           value={filter}
           onChange={(e) => setFilter(e.target.value)}
