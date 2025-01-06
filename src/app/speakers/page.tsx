@@ -12,33 +12,43 @@ const SpeakersPage = () => {
         </h1>
 
         {/* Grid Section */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 w-full max-w-screen-xl">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 w-full max-w-screen-xl">
           {[...Array(4)].map((_, index) => (
             <div
               key={index}
-              className="bg-black p-4 flex flex-col items-center space-y-4"
+              className="card bg-base-200 shadow-md flex flex-col items-center space-y-4 p-4"
             >
               {/* Photo Section */}
-              <div className="w-40 h-40 bg-gray-500 rounded-md overflow-hidden">
-                <img
-                  src="https://via.placeholder.com/200"
-                  alt="Speaker"
-                  className="w-full h-full object-cover"
-                />
+              <div className="avatar">
+                <div className="w-24 rounded">
+                  <img
+                    src="https://via.placeholder.com/200"
+                    alt="Speaker"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               </div>
               {/* Text Section */}
               <div className="text-center">
-                <h2 className="text-lg font-semibold text-white">Speaker Name</h2>
+                <h2 className="card-title text-white">Speaker Name</h2>
                 <p className="text-sm text-gray-400">
                   Speaker title or brief description here.
                 </p>
               </div>
               {/* Social Icons */}
-              <div className="flex space-x-3">
-                <a href="#" className="text-gray-400 hover:text-white">
+              <div className="card-actions justify-center">
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-blue-500 tooltip"
+                  data-tip="Twitter"
+                >
                   <i className="fab fa-twitter"></i>
                 </a>
-                <a href="#" className="text-gray-400 hover:text-white">
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-blue-600 tooltip"
+                  data-tip="LinkedIn"
+                >
                   <i className="fab fa-linkedin"></i>
                 </a>
               </div>
@@ -47,7 +57,7 @@ const SpeakersPage = () => {
         </div>
 
         {/* Button Section */}
-        <button className="mt-16 px-6 py-3 rounded-full bg-purple-500 text-white font-medium hover:bg-purple-600">
+        <button className="btn btn-primary mt-12">
           Apply as speaker
         </button>
       </main>
@@ -59,5 +69,3 @@ const SpeakersPage = () => {
 };
 
 export default SpeakersPage;
-
-
