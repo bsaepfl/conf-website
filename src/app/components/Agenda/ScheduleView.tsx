@@ -245,10 +245,10 @@ const ScheduleView: React.FC = () => {
 
     return (
         <div className="w-full max-w-7xl mx-auto px-4">
-            <h2 className="text-3xl font-bold mb-8">Conference Schedule</h2>
+            <h2 className="text-3xl font-bold mb-8 bg-opacity-100">Conference Schedule</h2>
 
             <Tab.Group onChange={(index) => setSelectedDay(navigationEvent[index])}>
-                <Tab.List className="flex space-x-2 bg-white rounded-xl p-2">
+                <Tab.List className="flex space-x-2 bg-white bg-opacity-100 rounded-xl p-2">
                     {navigationEvent.map((day) => (
                         <Tab
                             key={day.date}
@@ -265,7 +265,7 @@ const ScheduleView: React.FC = () => {
                     {navigationEvent.map((day) => (
                         <Tab.Panel key={day.date}>
                             {currentDaySchedule.length > 0 ? (
-                                <ul className="bg-white rounded-xl divide-y">
+                                <ul className="bg-white bg-opacity-100 rounded-xl divide-y">
                                     {currentDaySchedule.map((event, index) => (
                                         <ScheduleEvent
                                             key={`${day.date}-${index}`}
@@ -275,7 +275,7 @@ const ScheduleView: React.FC = () => {
                                     ))}
                                 </ul>
                             ) : (
-                                <p className="text-gray-500 text-center py-8">
+                                <p className="text-gray-500 text-center py-8 bg-white bg-opacity-100">
                                     No events scheduled for this day
                                 </p>
                             )}
