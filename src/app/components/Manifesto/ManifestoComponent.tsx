@@ -14,9 +14,22 @@ const ManifestoComponent = () => {
     "Together, we're building a community that drives meaningful advancement in blockchain technology and its applications."
   ];
 
-  useEffect(() => {
-    const handleWheel = (e) => {
-      e.preventDefault();
+  const [canScroll, setCanScroll] = useState(true);
+const scrollAccumulator = useRef(0);
+const SCROLL_THRESHOLD = 300; // Increase this value to require more scrolling
+
+useEffect(() => {
+  const handleWheel = (e) => {
+    e.preventDefault();
+    
+    if (!canScroll) return;
+
+    scrollAccumulator.current += Math.abs(e.deltaY);
+
+    if (scrollAccumulator.current >= SCROLL_THRESHOLD) {
+      setCanScroll(false);
+      scrollAccumulator.current = 0;
+
       if (e.deltaY > 0) {
         // Scrolling down
         setCurrentTextIndex(prev => (prev + 1) % texts.length);
@@ -24,19 +37,26 @@ const ManifestoComponent = () => {
         // Scrolling up
         setCurrentTextIndex(prev => prev === 0 ? texts.length - 1 : prev - 1);
       }
-    };
 
-    const container = containerRef.current;
-    if (container) {
-      container.addEventListener('wheel', handleWheel, { passive: false });
+      // Add a delay before allowing next scroll
+      setTimeout(() => {
+        setCanScroll(true);
+      }, 1000); // 1 second delay between scrolls
     }
+  };
 
-    return () => {
-      if (container) {
-        container.removeEventListener('wheel', handleWheel);
-      }
-    };
-  }, [texts.length]);
+  const container = containerRef.current;
+  if (container) {
+    container.addEventListener('wheel', handleWheel, { passive: false });
+  }
+
+  return () => {
+    if (container) {
+      container.removeEventListener('wheel', handleWheel);
+    }
+  };
+}, [texts.length, canScroll]);
+
 
   const goToPrevious = () => {
     setCurrentTextIndex((prevIndex) => 
