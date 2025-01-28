@@ -26,8 +26,20 @@ const grantsData = [
 const GrantsComponent = () => {
   return (
     <div className="relative container mx-auto py-8">
-      <StarsBackground />
-      <h1 className="text-4xl font-bold text-center mb-8 bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">Grants</h1>
+<h1 className="
+  text-4xl 
+  font-bold 
+  text-center 
+  mb-8 
+  title-shine 
+  bg-clip-text 
+  text-transparent
+  transition-all
+  duration-300
+  hover:scale-105
+">
+  Grants
+</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {grantsData.map((grant, index) => (
           <Grant

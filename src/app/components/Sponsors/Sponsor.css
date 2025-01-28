@@ -1,0 +1,52 @@
+/* src/components/Sponsors/Sponsor.css */
+@keyframes borderShine {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.shine-border {
+  position: relative;
+  background: linear-gradient(
+    45deg,
+    #1a1a1a 0%,
+    #404040 20%,
+    #808080 40%,
+    #a0a0a0 50%,
+    #808080 60%,
+    #404040 80%,
+    #1a1a1a 100%
+  );
+  background-size: 200% 200%;
+  animation: borderShine 3s linear infinite;
+  transition: all 0.3s ease;
+}
+
+.shine-border:hover {
+    background: linear-gradient(
+        45deg,
+        #2a2a2a 0%,
+        #505050 20%,
+        #909090 40%,
+        #b0b0b0 50%,
+        #909090 60%,
+        #505050 80%,
+        #2a2a2a 100%
+      );
+  background-size: 200% 200%;
+  animation: borderShine 1.5s linear infinite;
+  box-shadow: 0 0 20px rgba(80, 80, 80, 0.7);
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+}
+
+/* Optional: Add a glow effect on hover */
+.shine-border:hover {
+  box-shadow: 0 0 15px rgba(80, 80, 80, 0.5);
+}

@@ -18,4 +18,7 @@ export default {
   plugins: [
     require('daisyui'),
   ],
+  daisyui: {
+    themes: ["nord"], // This enables only the retro theme
+  },
 } satisfies Config;

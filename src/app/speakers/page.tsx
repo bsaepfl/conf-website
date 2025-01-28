@@ -6,7 +6,7 @@ import SpeakersComponent from '../components/Speakers/SpeakersComponent';
 
 const SpeakersPage = () => {
   return (
-    <div className="relative flex flex-col min-h-screen bg-black">
+    <div className="relative flex flex-col min-h-screen bg-base-200">
       <StarsBackground />
       <Navbar />
       <div className="relative z-10 flex-grow">

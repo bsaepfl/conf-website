@@ -27,9 +27,22 @@ const sideEventsData = [
 
 const SideEventsComponent = () => {
   return (
-    <div className="relative container mx-auto py-8">
-      <StarsBackground />
-      <h1 className="text-4xl font-bold text-center mb-8 bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">Side Events</h1>
+    <div className="relative container mx-auto py-8 ">
+<h1 className="
+  text-4xl 
+  font-bold 
+  text-center 
+  mb-8 
+  title-shine 
+  bg-clip-text 
+  text-transparent
+  transition-all
+  duration-300
+  hover:scale-105
+">
+  Side Events
+</h1>
+
       <div className="flex flex-col items-center">
         {sideEventsData.map((event, index) => (
           <SideEvent

@@ -6,12 +6,25 @@ import StarsBackground from '../components/StarsBackground';
 
 const AgendaPage = () => {
   return (
-    <div className="relative flex flex-col min-h-screen">
+    <div className="relative flex flex-col min-h-screen bg-base-200">
       <StarsBackground />
       <Navbar />
-      <main className="relative flex-grow flex flex-col items-center justify-center pt-24 pb-12 z-0">
-        <div className="w-full max-w-7xl px-4">
-          <h1 className="text-4xl font-bold mb-8 text-center">Agenda</h1>
+      <main className="relative flex-grow flex flex-col items-center justify-center pt-24 pb-24 z-0">
+        <div className="w-full max-w-7xl ">
+          <h1 className="
+            text-4xl 
+            font-bold 
+            text-center 
+            mb-8 
+            title-shine 
+            bg-clip-text 
+            text-transparent
+            transition-all
+            duration-300
+            hover:scale-105
+          ">
+            Agenda
+          </h1>
           <ScheduleView />
         </div>
       </main>

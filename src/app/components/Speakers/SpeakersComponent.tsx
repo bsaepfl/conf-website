@@ -45,16 +45,27 @@ const SpeakersComponent = () => {
   return (
     <main className="relative z-10 flex-grow flex flex-col items-center justify-center pt-28 pb-12 px-4 sm:px-6 lg:px-8">
       {/* Title Section */}
-      <h1 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-pink-600 mb-16">
-        Speakers
-      </h1>
+      <h1 className="
+  text-4xl 
+  font-bold 
+  text-center 
+  mb-8 
+  title-shine 
+  bg-clip-text 
+  text-transparent
+  transition-all
+  duration-300
+  hover:scale-105
+">
+  SPEAKERS
+</h1>
 
       {/* Grid Section */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 w-full max-w-screen-xl">
         {speakersData.map((speaker, index) => (
           <div
             key={index}
-            className="card bg-base-200 shadow-md p-6 flex flex-col items-center space-y-4 h-72 w-80 relative"
+            className="card bg-neutral shadow-md p-6 flex flex-col items-center space-y-4 h-72 w-80 relative"
           >
             {/* Photo Section */}
             <div className="avatar">
@@ -97,7 +108,7 @@ const SpeakersComponent = () => {
       </div>
 
       {/* Button Section */}
-      <button className="btn btn-primary mt-12">
+      <button className="btn btn-primary btn-wide text-white transform transition-transform duration-300 hover:scale-105 active:scale-95 mt-12">
         Apply as speaker
       </button>
     </main>

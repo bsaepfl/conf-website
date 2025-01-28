@@ -245,7 +245,6 @@ const ScheduleView: React.FC = () => {
 
     return (
         <div className="w-full max-w-7xl mx-auto px-4">
-            <h2 className="text-3xl font-bold mb-8 bg-opacity-100">Conference Schedule</h2>
 
             <Tab.Group onChange={(index) => setSelectedDay(navigationEvent[index])}>
                 <Tab.List className="flex space-x-2 bg-white bg-opacity-100 rounded-xl p-2">

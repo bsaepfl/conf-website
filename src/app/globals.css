@@ -14,14 +14,11 @@
   }
 }
 
-
-
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
-
 
 #tsparticles {
   position: absolute;
@@ -31,3 +28,98 @@ body {
   height: 100%;
   z-index: 0;
 }
+
+@keyframes titleShine {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.title-shine {
+  background-image: linear-gradient(
+    120deg,
+    #64748b 0%,
+    #475569 20%,
+    #334155 40%,
+    #1e293b 50%,
+    #334155 60%,
+    #475569 80%,
+    #64748b 100%
+  );
+  background-size: 200% auto;
+  animation: titleShine 8s linear infinite; /* Slowed down from 4s to 8s */
+  transition: all 0.3s ease;
+  text-shadow: 0 0 10px rgba(30, 41, 59, 0.4);
+}
+
+.title-shine:hover {
+  animation: titleShine 4s linear infinite; /* Slowed down from 2s to 4s */
+  text-shadow: 0 0 15px rgba(30, 41, 59, 0.5);
+  letter-spacing: 0.5px;
+}
+
+
+/* Optional: Add a glow effect on the entire section */
+.title-section {
+  position: relative;
+}
+
+.title-section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at center, rgba(148, 163, 184, 0.1) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.gradient-border {
+  position: relative;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+}
+
+.gradient-border::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  right: -1px;
+  bottom: -1px;
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.1)
+  );
+  border-radius: 16px;
+  mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  pointer-events: none;
+  animation: borderGlow 4s linear infinite;
+}
+
+@keyframes borderGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.text-shadow {
+  text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+

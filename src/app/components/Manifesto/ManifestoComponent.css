@@ -1,0 +1,12 @@
+/* src/components/ManifestoComponent.css */
+.vision-text {
+  background: linear-gradient(45deg, #2e3440, #3b4252);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.text-glow {
+  text-shadow: 0 0 5px rgba(129, 161, 193, 0.3),
+               0 0 10px rgba(129, 161, 193, 0.2);
+}
