@@ -40,14 +40,14 @@ const WhatComponent = () => {
           </h1>
         </div>
         <div className="md:w-1/2">
-          <p className="text-lg text-gray-700 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-500 font-bold">
+          <p className="text-lg text-gray-700 bg-clip-text text-black font-bold">
           Privacy is the ability to control personal information and protect oneself from unwanted intrusion. It involves selectively sharing data and maintaining personal boundaries in both physical and digital spaces.
             <br /><br />
             Verifiability is the capacity to prove something true through empirical evidence and reproducible methods. It ensures claims can be objectively tested and validated, forming a cornerstone of scientific and rational inquiry.
             <br /><br />         
           </p>
           <h2 className="text-2xl font-bold bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-black mb-8">When ?</h2>
-        <p className="text-lg text-gray-700 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-500 font-bold">March 7th, 2025, or in: </p>
+        <p className="text-lg text-gray-700 bg-clip-text text-black font-bold">March 7th, 2025, or in: </p>
         <span className="countdown font-mono text-2xl text-black">
           <span style={{"--value": timeLeft.days || 0}}></span>:
           <span style={{"--value": timeLeft.hours || 0}}></span>:
@@ -57,7 +57,7 @@ const WhatComponent = () => {
         <br />
         <br />
         <h2 className="text-2xl font-bold bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-black mb-8">Where?</h2>
-        <p className="text-lg text-gray-700 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-500 font-bold">EPFL, Lausanne, Switzerland</p>
+        <p className="text-lg text-gray-700 bg-clip-text text-black font-bold">EPFL, Lausanne, Switzerland</p>
         <div className="mt-4 flex flex-col items-center">
           <img src={img.src} alt="EPFL Map Preview" className="w-full max-w-md rounded-lg shadow-lg" />
           <a
