@@ -3,23 +3,28 @@ import React from 'react';
 import Grant from './Grant';
 import StarsBackground from '../StarsBackground';
 import placeholder from '../../images/tickets/placeholder.webp';
+import mina from '../../images/sponsors/mina.png';
+import hedera from '../../images/sponsors/hedera.png';
+import hyle from '../../images/sponsors/hyle.png';
 
 const grantsData = [
   {
-    title: 'Grant 1',
+    title: 'Mina',
     description: 'Description for grant 1.',
     sponsoredBy: 'Sponsor 1',
-    sponsorImage: placeholder,
+    sponsorImage: mina,
   },
   {
-    title: 'Grant 2',
+    title: 'Hedera',
     description: 'Description for grant 2.',
     sponsoredBy: 'Sponsor 2',
-    sponsorImage: placeholder,
+    sponsorImage: hedera,
   },
   {
-    title: 'Grant 3',
+    title: 'Hylé',
     description: 'Description for grant 3.',
+    sponsoredBy: 'Sponsor 3',
+    sponsorImage: hyle,
   },
 ];
 

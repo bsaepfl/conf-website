@@ -3,42 +3,42 @@ import Image from 'next/image';
 import placeholder from '../../images/tickets/placeholder.webp';
 
 const speakersData = [
-  {
-    name: 'Speaker 1',
-    image: placeholder,
-    description: 'Speaker 1 title or brief description here.',
-    socials: {
-      twitter: 'https://twitter.com/speaker1',
-      linkedin: 'https://linkedin.com/in/speaker1',
-    },
-  },
-  {
-    name: 'Speaker 2',
-    image: placeholder,
-    description: 'Speaker 2 title or brief description here.',
-    socials: {
-      twitter: 'https://twitter.com/speaker2',
-      linkedin: 'https://linkedin.com/in/speaker2',
-    },
-  },
-  {
-    name: 'Speaker 3',
-    image: placeholder,
-    description: 'Speaker 3 title or brief description here.',
-    socials: {
-      twitter: 'https://twitter.com/speaker3',
-      linkedin: 'https://linkedin.com/in/speaker3',
-    },
-  },
-  {
-    name: 'Speaker 4',
-    image: placeholder,
-    description: 'Speaker 4 title or brief description here.',
-    socials: {
-      twitter: 'https://twitter.com/speaker4',
-      linkedin: 'https://linkedin.com/in/speaker4',
-    },
-  },
+  // {
+  //   name: 'Speaker 1',
+  //   image: placeholder,
+  //   description: 'Speaker 1 title or brief description here.',
+  //   socials: {
+  //     twitter: 'https://twitter.com/speaker1',
+  //     linkedin: 'https://linkedin.com/in/speaker1',
+  //   },
+  // },
+  // {
+  //   name: 'Speaker 2',
+  //   image: placeholder,
+  //   description: 'Speaker 2 title or brief description here.',
+  //   socials: {
+  //     twitter: 'https://twitter.com/speaker2',
+  //     linkedin: 'https://linkedin.com/in/speaker2',
+  //   },
+  // },
+  // {
+  //   name: 'Speaker 3',
+  //   image: placeholder,
+  //   description: 'Speaker 3 title or brief description here.',
+  //   socials: {
+  //     twitter: 'https://twitter.com/speaker3',
+  //     linkedin: 'https://linkedin.com/in/speaker3',
+  //   },
+  // },
+  // {
+  //   name: 'Speaker 4',
+  //   image: placeholder,
+  //   description: 'Speaker 4 title or brief description here.',
+  //   socials: {
+  //     twitter: 'https://twitter.com/speaker4',
+  //     linkedin: 'https://linkedin.com/in/speaker4',
+  //   },
+  // },
 ];
 
 const SpeakersComponent = () => {
@@ -59,6 +59,23 @@ const SpeakersComponent = () => {
 ">
   SPEAKERS
 </h1>
+<br />
+<br />
+<br />
+<br />
+<h1 className="
+  text-2xl 
+  font-bold 
+  text-center 
+  mb-8 
+  title-shine 
+  bg-clip-text 
+  text-transparent
+  transition-all
+  duration-300
+  hover:scale-105
+">To be announced soon...</h1>
+
 
       {/* Grid Section */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 w-full max-w-screen-xl">
@@ -108,9 +125,13 @@ const SpeakersComponent = () => {
       </div>
 
       {/* Button Section */}
+      <h1>To be announced soon...</h1>
       <button className="btn btn-primary btn-wide text-white transform transition-transform duration-300 hover:scale-105 active:scale-95 mt-12">
         Apply as speaker
       </button>
+      <br />
+      <br />
+      
     </main>
   );
 };
