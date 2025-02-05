@@ -1,6 +1,9 @@
 'use client';
+<<<<<<< Updated upstream
 import StarsBackground from '../components/StarsBackground';
 import Navbar from '../components/Navbar';
+=======
+>>>>>>> Stashed changes
 import NavbarH from '../components/NavbarH';
 import Footer from '../components/Footer';
 import Hero from '../components/Hackathon/HeroView';
@@ -11,6 +14,7 @@ import DiscoverSuiView from '../components/Hackathon/DiscoverSuiView';
 import LocationView from '../components/Hackathon/LocationView';
 import FaqView from '../components/Hackathon/FaqView';
 import RulesView from '../components/Hackathon/RulesView';
+import StarsBackground from '../components/StarsBackground';
 
 
 export default function Hackathon() {
