@@ -31,8 +31,8 @@ const Hero = () => {
       <StarsBackground />
       <div className="relative z-10 flex flex-col items-center justify-center gap-8 px-4 h-screen">
         <div className="text-center">
-          <h1 className="text-6xl font-bold text-black">BSA Blockchain conference</h1>
-          <h1 className="text-3xl font-bold text-black">Privacy and Verifyability</h1>
+          <h1 className="text-6xl font-bold text-black">BSA Blockchain Conference</h1>
+          <h1 className="text-3xl font-bold text-black">Privacy and Verifiability</h1>
 
           <p className="text-xl  mt-4 text-black">EPFL, March 7th</p>
         </div>
