@@ -1,4 +1,5 @@
 'use client';
+import StarsBackground from '../components/StarsBackground';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Hero from '../components/Hackathon/HeroView';
@@ -15,6 +16,7 @@ export default function Hackathon() {
     <div className="flex flex-col min-h-screen">
       <Navbar />
       <main className="flex-grow flex-col flex items-center justify-center bg-base-200">
+        <StarsBackground />
         <Hero />
         <ApplyView />
         <ScheduleView />
