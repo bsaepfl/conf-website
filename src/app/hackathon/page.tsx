@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Hero from '../components/Hackathon/HeroView';
 import ApplyView from '../components/Hackathon/ApplyView';
-import ScheduleView from '../components/Hackathon/ScheduleView';
+import ScheduleView from '../components/Agenda/ScheduleView';
 import PrizeView from '../components/Hackathon/PrizeView';
 import DiscoverSuiView from '../components/Hackathon/DiscoverSuiView';
 import LocationView from '../components/Hackathon/LocationView';

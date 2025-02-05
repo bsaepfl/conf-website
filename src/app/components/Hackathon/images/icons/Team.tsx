@@ -8,7 +8,7 @@ const Team = ({ classname }: { classname?: string }) => {
       xmlns="http://www.w3.org/2000/svg"
       className={classname}
     >
-      <g clip-path="url(#clip0_960_275)">
+      <g clipPath="url(#clip0_960_275)">
         <path
           d="M25.544 16.8471C27.4489 16.8471 28.9934 15.3036 28.9934 13.3987C28.9934 11.4938 27.4488 9.94922 25.544 9.94922C23.6396 9.94922 22.095 11.4938 22.095 13.3987C22.095 15.3036 23.6396 16.8471 25.544 16.8471Z"
           fill="#4CA3FF"

@@ -35,7 +35,6 @@ const ApplyView = () => {
             <ImSpinner2 className="h-7 w-7 text-white animate-spin" />
           </div>
           <div
-            class="apply-button"
             data-hackathon-slug="sui-bsa-hackathon"
             data-button-theme="dark"
             className="h-[44px] w-[312px] apply-button z-[2]"

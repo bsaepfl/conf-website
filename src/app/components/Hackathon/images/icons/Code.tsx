@@ -11,9 +11,9 @@ const Code = ({ classname }) => {
       <path
         d="M10.1429 8L3 14.4615L10.1429 22M20.8571 8L28 14.4615L20.8571 22"
         stroke="#4CA3FF"
-        stroke-width="4"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="4"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );

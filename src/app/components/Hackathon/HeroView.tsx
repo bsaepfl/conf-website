@@ -1,3 +1,4 @@
+'use client';
 import React, { useEffect } from "react";
 import { SlArrowDown } from "react-icons/sl";
 import BoxText from "./Style/BoxText";
@@ -46,7 +47,6 @@ const Hero = () => {
               <ImSpinner2 className="h-7 w-7 text-white animate-spin" />
             </div>
             <div
-              class="apply-button"
               data-hackathon-slug="sui-x-bsa-student-hackathon-v"
               data-button-theme="dark"
               className="h-[44px] w-[312px] apply-button z-[2]"
