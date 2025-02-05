@@ -1,9 +1,8 @@
-"use client";
+'use client';
 
 import React, { useState, useEffect } from 'react';
-import StarsBackground from '../StarsBackground';
 import img from '../../images/map/image.png';
-
+import Image from 'next/image';
 
 const WhatComponent = () => {
   const calculateTimeLeft = () => {
@@ -21,18 +20,26 @@ const WhatComponent = () => {
     return timeLeft;
   };
 
-  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+  const [timeLeft, setTimeLeft] = useState(() => calculateTimeLeft());
+  const [isMounted, setIsMounted] = useState(false);  // New state to handle mounting
 
   useEffect(() => {
+    setIsMounted(true);  // Set mounted to true after first render
+    
     const timer = setInterval(() => {
       setTimeLeft(calculateTimeLeft());
     }, 1000);
+    
     return () => clearInterval(timer);
   }, []);
 
+  // Render nothing until component is mounted to avoid hydration mismatch
+  if (!isMounted) {
+    return null;
+  }
+
   return (
-    <div className="relative container mx-auto py-8 padding-top max-h-[600px] w-full">
-      <StarsBackground />
+    <div className="relative container mx-auto py-8 padding-top w-full">
       <div className="flex flex-col md:flex-row items-center md:items-start justify-between">
         <div className="md:w-1/2 text-center md:text-left">
           <h1 className="text-4xl font-bold  bg-clip-text text-black mb-8">
@@ -58,8 +65,8 @@ const WhatComponent = () => {
         <br />
         <h2 className="text-2xl font-bold bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-black mb-8">Where?</h2>
         <p className="text-lg text-gray-700 bg-clip-text text-black font-bold">EPFL, Lausanne, Switzerland</p>
-        <div className="mt-4 flex flex-col items-center">
-          <img src={img.src} alt="EPFL Map Preview" className="w-full max-w-md rounded-lg shadow-lg" />
+        <div className="mt-4 items-center">
+          <Image src={img.src} width={500} height={500} alt="EPFL Map Preview" className="w-full max-w-md rounded-lg shadow-lg" />
           <a
             href="https://goo.gl/maps/8QvU8ZQ1y2XjVb2f9"
             target="_blank"
