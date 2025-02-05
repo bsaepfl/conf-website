@@ -14,7 +14,7 @@ export default function Hackathon() {
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
-      <main className="flex-grow flex items-center justify-center bg-base-200">
+      <main className="flex-grow flex-col flex items-center justify-center bg-base-200">
         <Hero />
         <ApplyView />
         <ScheduleView />
