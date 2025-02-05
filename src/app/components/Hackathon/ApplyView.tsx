@@ -16,7 +16,7 @@ const ApplyView = () => {
   }, []);
 
   return (
-    <div className="w-full flex flex-col justify-start items-center bg-white text-dark-100 z-[2]">
+    <div className="w-full flex flex-col justify-start items-center bg-white text-black z-[2]">
       <div className="w-full max-w-[1100px] flex flex-col py-20 px-4 sm:px-10 gap-8 text-sm sm:text-base z-[2]">
         <h2 className="w-full font-bold text-3xl sm:text-4xl text-dark-100 indent-2 pb-8">
           How To Apply - Join a Team
@@ -24,7 +24,7 @@ const ApplyView = () => {
         <p>
           <BsArrowRight className="inline" /> Sign in or sign up for a Devfolio
           account using your email, Google, GitHub, or Ethereum. <br />
-          <BsArrowRight className="inline" /> Apply to the SUI x BSA Student
+          <BsArrowRight className="inline" /> Apply to the Privacy and Verifiability 
           Hackathon on Devfolio.
           <br />
           <BsArrowRight className="inline" /> Join or create a team, or you can

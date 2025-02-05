@@ -84,11 +84,8 @@ const Hero = () => {
       </div>
 
       {/* <GrantsComponent /> */}
-
-      <WhatComponent />
-
-
-      {/* <div className="w-full max-w-7xl ">
+      
+      <div id="agenda" className="w-full max-w-7xl ">
           <h1 className="
             text-4xl 
             font-bold 
@@ -104,21 +101,15 @@ const Hero = () => {
             Agenda
           </h1>
           <ScheduleView />
-        </div> */}
+        </div>
 
-        <br />
-        <br />
-        <h1 className="
-          text-4xl 
-          font-bold 
-          text-center 
-          mb-8 
-          title-shine 
-          bg-clip-text 
-          text-transparent
-          transition-all
-          duration-300
-          hover:scale-105 opacity-0"> easter</h1>
+      <div id="more">
+        <WhatComponent />
+      </div>
+      <br />
+      <br />
+
+      
     </div>
   );
 };

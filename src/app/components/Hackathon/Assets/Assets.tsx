@@ -240,7 +240,7 @@ export const faqQuestions: FaqType[] = [
     answer: "Thanks to our sponsors, attendance is free (including food).",
   },
   {
-    question: "I am new to Sui and Move, can I participate?",
+    question: "I am new to hackathon, can I participate?",
     answer:
       "Absolutely! Our events are open to both beginners and veterans of the blockchain world. This event in particular will be tailored to attendees who have a basic knowledge in Computer Science and are interested in exploring or starting a journey in blockchain.",
   },
@@ -258,7 +258,7 @@ export const faqQuestions: FaqType[] = [
   {
     question: "Where is it?",
     answer:
-      "The Sui x BSA Hackathon will take place in EPFL’s Lausanne campus, BC Building. You can find directions in the section above.",
+      "The Privacy and Verifiability Hackathon will take place in EPFL’s Lausanne campus, BC Building. You can find directions in the section above.",
   },
   {
     question: "What should I bring?",
@@ -270,19 +270,19 @@ export const faqQuestions: FaqType[] = [
     answer:
       "We have booked a youth hostel for foreign participants. If you are a local participant, you can go home to sleep. We will also have a quiet room for naps.",
   },
-  {
-    question: "Will my travel be reimbursed?",
-    answer:
-      "We will reimburse up to 150 CHF of travel from outside of Switzerland, and 50 CHF of travel within Switzerland outside of the Lausanne area, upon presentation of receipts and a project submission at the end of the event.",
-  },
+  // {
+  //   question: "Will my travel be reimbursed?",
+  //   answer:
+  //     "We will reimburse up to 150 CHF of travel from outside of Switzerland, and 50 CHF of travel within Switzerland outside of the Lausanne area, upon presentation of receipts and a project submission at the end of the event.",
+  // },
   {
     question: "What if I don't have a team?",
     answer:
       "You don’t need one to apply! Part of the fun of a hackathon is meeting new people. We have created a Telegram group in which you will be added upon form registration were you will be able to find a team. You can also come during our workshops to find a team! It is also possible to create teams the first day of hacking.",
   },
-  {
-    question: "What about intellectual property?",
-    answer:
-      "We do not claim any rights on any of your intellectual property whatsoever. Everything you create, at Sui x BSA hackathon or not, belongs to you.",
-  },
+  // {
+  //   question: "What about intellectual property?",
+  //   answer:
+  //     "We do not claim any rights on any of your intellectual property whatsoever. Everything you create, at Sui x BSA hackathon or not, belongs to you.",
+  // },
 ];

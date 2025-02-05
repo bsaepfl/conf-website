@@ -17,7 +17,7 @@ const LocationView = () => {
               />
           </div>
           <div className="flex flex-col justify-center gap-5 ">
-            <h2 className="w-full font-bold text-3xl sm:text-4xl text-dark-100 indent-2 pb-8">
+            <h2 className="w-full font-bold text-3xl sm:text-4xl text-black indent-2 pb-8">
               Location
             </h2>
 
@@ -31,7 +31,7 @@ const LocationView = () => {
                   className="w-full"
                 />              
               </div>
-              <p className=" pl-2 md:pl-0 text-left w-full max-w-[400px]">
+              <p className=" pl-2 md:pl-0 text-left w-full max-w-[400px] text-black">
                 EPFL - BC Building, <br /> 1015 Ecublens VD, Switzerland
               </p>
               {/* </div> */}
