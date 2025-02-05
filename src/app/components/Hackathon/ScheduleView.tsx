@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { CurrentEvent, DayProps, ScheduleEventType } from "../../../types";
-import ToggleButton from "../../ToggleButton";
-import { navigationEvent, navigationPreEvent, schedule } from "../../../assets";
-import ScheduleEvent from "../../ScheduleEvent";
+import { CurrentEvent, DayProps, ScheduleEventType } from "./Types/Types";
+import ToggleButton from "./Style/ToggleButton";
+import { navigationEvent, navigationPreEvent, schedule } from "./Assets/Assets";
+import ScheduleEvent from "./ScheduleEvent";
 import classNames from "classnames";
 
 const ScheduleView = () => {

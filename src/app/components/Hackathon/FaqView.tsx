@@ -1,7 +1,7 @@
 import { Disclosure } from "@headlessui/react";
 import React from "react";
 import { FiChevronUp } from "react-icons/fi";
-import { faqQuestions } from "../../../assets";
+import { faqQuestions } from "./Assets/Assets";
 
 const FaqView = () => {
   return (

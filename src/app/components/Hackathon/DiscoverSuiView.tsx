@@ -1,7 +1,7 @@
 import React from "react";
-import EventCard from "../../EventCard";
+import EventCard from "./Style/EventCard";
 import { HiArrowLongRight } from "react-icons/hi2";
-import { DiscoverButton } from "../../NewsPopUp";
+import { DiscoverButton } from "./Style/NewsPopUp";
 
 const DiscoverSuiView = () => {
   return (

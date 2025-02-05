@@ -1,14 +1,8 @@
 import React, { useEffect } from "react";
-import hero2 from "../../../images/hero/bsa_illus_3.webp";
-import earth from "../../../images/hero/earth.webp";
-import bc from "../../../images/hero/batiment-bc-epfl.jpg";
-import { BsArrowRight } from "react-icons/bs";
 import { SlArrowDown } from "react-icons/sl";
-import { Link } from "gatsby";
-import BoxText from "../../BoxText";
-import NewsPopUp, { DiscoverButton } from "../../NewsPopUp";
-import BSA_SUI_Logo from "../../../images/hero/BSA_SUI_Logo";
+import BoxText from "./Style/BoxText";
 import { ImSpinner2 } from "react-icons/im";
+import Image from "next/image";
 
 const Hero = () => {
   const goToPrizes = () => {
@@ -33,7 +27,6 @@ const Hero = () => {
       {/* NEW POP UP */}
       <div className="flex flex-col lg:flex-row w-full h-full p-0 items-center justify-evenly px-4 sm:px-10">
         <div className="flex flex-col items-center gap-10 w-full 2xl:w-[700px]">
-          <BSA_SUI_Logo classname="w-full md:w-full" />
           <BoxText
             text={
               <p className="text-dark-900 max-w-[400px] m-5 mb-3 font-normal text-center">
@@ -61,8 +54,10 @@ const Hero = () => {
           </div>
         </div>
         <div className="relative w-full h-full md:w-1/2 max-w-[1000px] overflow-hidden hidden lg:flex justify-center py-20">
-          <img
-            src={bc}
+          <Image
+            height={500}
+            width={500}
+            src="/images/batiment-bc-epfl.jpg" // Set src to the path in public folder
             alt="BC builduing EPFL"
             className="w-full h-full z-10 object-contain "
           />

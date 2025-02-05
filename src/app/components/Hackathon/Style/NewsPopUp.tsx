@@ -1,7 +1,7 @@
 import React from "react";
-import { Link } from "gatsby";
-import { DiscoverButtonProps } from "../types";
+import { DiscoverButtonProps } from "../Types/Types";
 import { useState } from "react";
+import Link from "next/link";
 
 const NewsPopUp = ({ newText }) => {
   const [isVisible, setIsVisible] = useState(false);
