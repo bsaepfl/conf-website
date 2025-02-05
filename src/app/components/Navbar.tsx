@@ -25,14 +25,11 @@ const Navbar = () => {
             </svg>
           </label>
           <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-4 shadow bg-base-100  rounded-box w-52 gap-6">
-            <li><Link href="/manifesto">Manifesto</Link></li>
-            <li><Link href="/speakers">Speakers</Link></li>
-            <li><Link href="/sponsors">Sponsors</Link></li>
-            <li><Link href="/side-events">Side Events</Link></li>
-            <li><Link href="/grants">Grants</Link></li>
-            <li><Link href="/agenda">Agenda</Link></li>
-            <li><Link href="/workshops">Workshops</Link></li>
-            <li><Link href="/tickets">Tickets</Link></li>
+          <li><button onClick={() => scrollToSection('manifesto')} className='text-l font-bold bg-clip-text text-white'>Manifesto</button></li>
+          <li><button onClick={() => scrollToSection('sponsors')} className='text-l font-bold bg-clip-text text-white'>Sponsors</button></li>
+          <li><button onClick={() => scrollToSection('speakers')} className='text-l font-bold bg-clip-text text-white'>Speakers</button></li>
+          <li><button onClick={() => scrollToSection('agenda')} className='text-l font-bold bg-clip-text text-white'>Agenda</button></li>
+          <li><button onClick={() => scrollToSection('more')} className='text-l font-bold bg-clip-text text-white'>More</button></li>
           </ul>
         </div>
             <Link href="/">
@@ -45,10 +42,12 @@ const Navbar = () => {
           <li><button onClick={() => scrollToSection('manifesto')} className='text-l font-bold bg-clip-text text-white'>Manifesto</button></li>
           <li><button onClick={() => scrollToSection('sponsors')} className='text-l font-bold bg-clip-text text-white'>Sponsors</button></li>
           <li><button onClick={() => scrollToSection('speakers')} className='text-l font-bold bg-clip-text text-white'>Speakers</button></li>
+          <li><button onClick={() => scrollToSection('agenda')} className='text-l font-bold bg-clip-text text-white'>Agenda</button></li>
+          <li><button onClick={() => scrollToSection('more')} className='text-l font-bold bg-clip-text text-white'>More</button></li>
           
           {/* <li><Link href="/side-events">Side Events</Link></li> */}
           {/* <li><Link href="/grants">Grants</Link></li> */}
-          <li><Link href="/agenda">Agenda</Link></li>
+        
           {/* <li><Link href="/workshops">Workshops</Link></li> */}
           
         </ul>
@@ -56,6 +55,7 @@ const Navbar = () => {
       
       <div className="navbar-end">
         {/* You might want to add a language selector or login button here */}
+        <Link href="/hackathon" className='p-2'>Hackathon</Link>
         <Link href="/register" className="btn ">Register</Link>
       </div>
     </div>
