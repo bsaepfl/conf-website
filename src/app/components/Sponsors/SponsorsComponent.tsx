@@ -4,42 +4,46 @@ import Sponsor from './Sponsor';
 import StarsBackground from '../StarsBackground';
 import placeholder from '../../images/tickets/placeholder.webp';
 import './SponsorsComponent.css'; // Create this CSS file
+import mina from '../../images/sponsors/mina.png';
+import cardinal from '../../images/sponsors/cardinal.png';
+import aleph from '../../images/sponsors/aleph.png';
+import tha from '../../images/sponsors/tha.png';
 
 
 const sponsorsData = [
   {
-    logo: placeholder,
-    name: 'Sponsor 1',
-    link: 'https://sponsor1.com',
-    tier: 'platinum',
-  },
-  {
-    logo: placeholder,
-    name: 'Sponsor 2',
-    link: 'https://sponsor2.com',
-    tier: 'gold',
-  },
-  {
-    logo: placeholder,
-    name: 'Sponsor 3',
-    link: 'https://sponsor3.com',
+    logo: mina,
+    name: '',
+    link: 'https://minaprotocol.com/',
     tier: 'silver',
   },
   {
-    logo: placeholder,
-    name: 'Sponsor 4',
-    link: 'https://sponsor4.com',
-    tier: 'bronze',
+    logo: tha,
+    name: '',
+    link: 'https://www.hashgraph.swiss/',
+    tier: 'gold',
+  },
+  {
+    logo: cardinal,
+    name: '',
+    link: 'https://cardinal.co/',
+    tier: 'silver',
+  },
+  {
+    logo: aleph,
+    name: '',
+    link: 'https://alephzero.org/',
+    tier: 'silver',
   },
 ];
 
 const SponsorsComponent = () => {
   const tiers = ['platinum', 'gold', 'silver', 'bronze'];
   const tierTitles = {
-    platinum: 'Platinum Sponsors',
+    // platinum: 'Platinum Sponsors',
     gold: 'Gold Sponsors',
     silver: 'Silver Sponsors',
-    bronze: 'Bronze Sponsors',
+    // bronze: 'Bronze Sponsors',
   };
 
   // With hover effects and transitions

@@ -17,14 +17,13 @@ const Sponsor = ({ logo, name, link, tier }) => {
       target="_blank" 
       rel="noopener noreferrer" 
       className={`
-        card w-full h-64 bg-white shadow-xl mb-8 
-        ${tier === 'platinum' ? 'p-[3px] rounded-xl overflow-hidden' : 'p-4'} 
+        card w-76 h-48 bg-white shadow-xl mb-8 p-[2px] rounded-xl overflow-hidden
         ${borderColor[tier]}
       `}
     >
       <div className="card-body flex flex-col items-center justify-center bg-white h-full w-full rounded-lg">
-        <Image src={logo} alt={name} width={100} height={100} className="rounded-full mb-4" />
-        <h2 className="card-title text-2xl font-bold text-center">{name}</h2>
+        <Image src={logo} alt={name} width={300} height={300} className="rounded-full mb-4" />
+        {/* <h2 className="card-title text-2xl font-bold text-center text-black">{name}</h2> */}
       </div>
     </a>
   );
