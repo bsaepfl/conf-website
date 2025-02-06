@@ -12,6 +12,7 @@ import GrantsComponent from './Grants/GrantsComponent';
 import WhatComponent from './What/WhatComponent';
 import PanelsComponent from './Panels/PanelsComponent';
 
+
 const Hero = () => {
   const handleAddToCalendar = useCallback(() => {
     const event = {
@@ -32,34 +33,20 @@ const Hero = () => {
       <StarsBackground />
       <div className="relative z-10 flex flex-col items-center justify-center gap-8 px-4 h-screen">
         <div className="text-center">
-          <h1 className="text-6xl font-bold text-black">BSA Blockchain Conference</h1>
-          <h1 className="text-3xl font-bold text-black">Privacy and Verifiability</h1>
+          
+          <h1 className="text-3xl sm:text-6xl font-bold text-black">BSA Blockchain Conference</h1>
+          <h1 className="text-xl sm:text-3xl font-bold text-black">Privacy and Verifiability</h1>
 
-          <p className="text-xl  mt-4 text-black">EPFL, March 7th</p>
+          <p className="sm:text-xl text-base mt-4 text-black">EPFL, March 7th</p>
         </div>
         <div>
-            <a className="btn btn-primary mt-6 padding-6" href="/register">Join as attendee</a>
-            <a className="btn btn-primary mt-6 ml-4" href="https://cryptpad.fr/form/#/2/form/view/VIi0a+XML51M6gBUfB484Tl+umj7stQfGVMGf-1AIFs/">Join as speaker</a>
+            <a className="btn btn-primary mt-6 padding-6 text-white" href="/register">Join as attendee</a>
+            <a className="btn btn-primary mt-6 ml-4 text-white" href="https://cryptpad.fr/form/#/2/form/view/VIi0a+XML51M6gBUfB484Tl+umj7stQfGVMGf-1AIFs/">Join as speaker</a>
           </div>
         
         <div className="card w-84 bg-neutral shadow-xl text-white">
          
-            {/* <h2 className="card-title justify-center">7 March 2025</h2>
-            <p className='bold flex items-center justify-center gap-2'>
-              <Image 
-                src="/images/flag/swissFlag.png" 
-                alt="Swiss flag" 
-                width={20} 
-                height={20}
-              />
-              EPFL BC
-              <Image 
-                src="/images/flag/swissFlag.png" 
-                alt="Swiss flag" 
-                width={20} 
-                height={20}
-              />
-            </p> */}
+          
             <div className="card-actions justify-center text-white">
               <button 
                 className="btn btn-primary btn-block text-white transform transition-transform duration-300 hover:scale-105 active:scale-95"
@@ -91,21 +78,9 @@ const Hero = () => {
       {/* <GrantsComponent /> */}
       
       <div id="agenda" className="w-full max-w-7xl ">
-          <h1 className="
-            text-4xl 
-            font-bold 
-            text-center 
-            mb-8 
-            title-shine 
-            bg-clip-text 
-            text-transparent
-            transition-all
-            duration-300
-            hover:scale-105
-          ">
-            Agenda
-          </h1>
-          <ScheduleView />
+  
+          
+          {/* <ScheduleView /> */}
         </div>
 
       <div id="more">

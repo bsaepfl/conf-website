@@ -6,6 +6,7 @@ import { ImSpinner2 } from "react-icons/im";
 import Image from "next/image";
 import BSALogo from "@/app/images/hero/BSALogo";
 
+
 const Hero = () => {
   const goToPrizes = () => {
     document.getElementById("Prizes")?.scrollIntoView({
@@ -27,7 +28,9 @@ const Hero = () => {
   return (
     <div className="bg-dark-800 flex flex-col items-center justify-center py-20  md:py-10 font-semibold min-h-[700px] h-screen w-full relative">
       {/* NEW POP UP */}
+      
       <div className="flex flex-col lg:flex-row w-full h-full p-0 items-center justify-evenly px-4 sm:px-10">
+      
         <div className="flex flex-col items-center gap-10 w-full 2xl:w-[700px]">
           <h1 className="text-4xl md:text-5xl font-bold text-center text-black flex-2">
             Privacy and Verifiability
@@ -48,7 +51,7 @@ const Hero = () => {
           <p className="md:text-xl font-light text-center text-black">
             8 - 9 March — EPFL CAMPUS
           </p>
-          <a className="btn btn-primary mt-6 padding-6" href="/register">Join as hacker</a>
+          <a className="btn btn-primary mt-6 padding-6 text-white" href="/register">Join as hacker</a>
         </div>
         <div className="relative w-full h-full md:w-1/2 max-w-[1000px] overflow-hidden hidden lg:flex justify-center py-20">
           <Image

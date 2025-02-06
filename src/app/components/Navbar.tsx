@@ -16,7 +16,7 @@ const scrollToSection = (id: string) => {
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-secondary shadow-lg fixed top-0 z-50 text-white font-semibold opacity-100">
+    <div className="navbar bg-secondary shadow-lg fixed top-0 z-50 text-white font-semibold opacity-100 ">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -29,7 +29,7 @@ const Navbar = () => {
           <li><button onClick={() => scrollToSection('sponsors')} className='text-l font-bold bg-clip-text text-white'>Sponsors</button></li>
           <li><button onClick={() => scrollToSection('panels')} className='text-l font-bold bg-clip-text text-white'>Panels</button></li>
           <li><button onClick={() => scrollToSection('speakers')} className='text-l font-bold bg-clip-text text-white'>Speakers</button></li>
-          <li><button onClick={() => scrollToSection('agenda')} className='text-l font-bold bg-clip-text text-white'>Agenda</button></li>
+          {/* <li><button onClick={() => scrollToSection('agenda')} className='text-l font-bold bg-clip-text text-white'>Schedule</button></li> */}
           <li><button onClick={() => scrollToSection('more')} className='text-l font-bold bg-clip-text text-white'>More</button></li>
           </ul>
         </div>
@@ -44,7 +44,7 @@ const Navbar = () => {
           <li><button onClick={() => scrollToSection('sponsors')} className='text-l font-bold bg-clip-text text-white'>Sponsors</button></li>
           <li><button onClick={() => scrollToSection('panels')} className='text-l font-bold bg-clip-text text-white'>Panels</button></li>
           <li><button onClick={() => scrollToSection('speakers')} className='text-l font-bold bg-clip-text text-white'>Speakers</button></li>
-          <li><button onClick={() => scrollToSection('agenda')} className='text-l font-bold bg-clip-text text-white'>Agenda</button></li>
+          {/* <li><button onClick={() => scrollToSection('agenda')} className='text-l font-bold bg-clip-text text-white'>Schedule</button></li> */}
           <li><button onClick={() => scrollToSection('more')} className='text-l font-bold bg-clip-text text-white'>More</button></li>
           
           {/* <li><Link href="/side-events">Side Events</Link></li> */}
@@ -55,9 +55,13 @@ const Navbar = () => {
         </ul>
       </div>
       
-      <div className="navbar-end">
-        {/* You might want to add a language selector or login button here */}
-        <Link href="/hackathon" className='p-2'>Hackathon</Link>
+      <div className="navbar-end flex space-x-4">
+        <a
+          className=' p-2 rounded-lg text-white bg-primary'
+        >
+          Conference
+        </a>
+        <Link href="/hackathon" className='p-2 hover:bg-blue-200 rounded-lg'>Hackathon</Link>
         <Link href="/register" className="btn ">Register</Link>
       </div>
     </div>

@@ -83,7 +83,8 @@ const tierGradientStyles = {
   return (
     <div className="relative container mx-auto py-8">
 <h1 className="
-  text-4xl 
+  sm:text-4xl 
+  text-2xl
   font-bold 
   text-center 
   mb-8 

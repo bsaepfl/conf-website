@@ -12,6 +12,7 @@ import LocationView from '../components/Hackathon/LocationView';
 import FaqView from '../components/Hackathon/FaqView';
 import RulesView from '../components/Hackathon/RulesView';
 import StarsBackground from '../components/StarsBackground';
+import SelectorComponent from '../components/Selector/SelectorComponent';
 
 
 export default function Hackathon() {
@@ -20,15 +21,16 @@ export default function Hackathon() {
       <StarsBackground />
       <NavbarH />
       <main className="flex-grow flex-col flex items-center justify-center bg-base-200">
+        
         <Hero />
 
         <div id="apply" className="w-full">
           <ApplyView />
         </div>
 
-        <div id="schedule" className="w-full">
+        {/* <div id="schedule" className="w-full">
           <ScheduleView />
-        </div>
+        </div> */}
 
         <div id="prize" className="w-full">
           <PrizeView />
