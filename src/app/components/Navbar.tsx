@@ -27,6 +27,7 @@ const Navbar = () => {
           <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-4 shadow bg-base-100  rounded-box w-52 gap-6">
           <li><button onClick={() => scrollToSection('manifesto')} className='text-l font-bold bg-clip-text text-white'>Manifesto</button></li>
           <li><button onClick={() => scrollToSection('sponsors')} className='text-l font-bold bg-clip-text text-white'>Sponsors</button></li>
+          <li><button onClick={() => scrollToSection('panels')} className='text-l font-bold bg-clip-text text-white'>Panels</button></li>
           <li><button onClick={() => scrollToSection('speakers')} className='text-l font-bold bg-clip-text text-white'>Speakers</button></li>
           <li><button onClick={() => scrollToSection('agenda')} className='text-l font-bold bg-clip-text text-white'>Agenda</button></li>
           <li><button onClick={() => scrollToSection('more')} className='text-l font-bold bg-clip-text text-white'>More</button></li>
@@ -41,6 +42,7 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1">
           <li><button onClick={() => scrollToSection('manifesto')} className='text-l font-bold bg-clip-text text-white'>Manifesto</button></li>
           <li><button onClick={() => scrollToSection('sponsors')} className='text-l font-bold bg-clip-text text-white'>Sponsors</button></li>
+          <li><button onClick={() => scrollToSection('panels')} className='text-l font-bold bg-clip-text text-white'>Panels</button></li>
           <li><button onClick={() => scrollToSection('speakers')} className='text-l font-bold bg-clip-text text-white'>Speakers</button></li>
           <li><button onClick={() => scrollToSection('agenda')} className='text-l font-bold bg-clip-text text-white'>Agenda</button></li>
           <li><button onClick={() => scrollToSection('more')} className='text-l font-bold bg-clip-text text-white'>More</button></li>

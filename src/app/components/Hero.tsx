@@ -10,6 +10,7 @@ import { Speaker } from 'lucide-react';
 import SpeakersComponent from './Speakers/SpeakersComponent';
 import GrantsComponent from './Grants/GrantsComponent';
 import WhatComponent from './What/WhatComponent';
+import PanelsComponent from './Panels/PanelsComponent';
 
 const Hero = () => {
   const handleAddToCalendar = useCallback(() => {
@@ -38,7 +39,7 @@ const Hero = () => {
         </div>
         <div>
             <a className="btn btn-primary mt-6 padding-6" href="/register">Join as attendee</a>
-            <button className="btn btn-primary mt-6 ml-4">Join as speaker</button>
+            <a className="btn btn-primary mt-6 ml-4" href="https://cryptpad.fr/form/#/2/form/view/VIi0a+XML51M6gBUfB484Tl+umj7stQfGVMGf-1AIFs/">Join as speaker</a>
           </div>
         
         <div className="card w-84 bg-neutral shadow-xl text-white">
@@ -77,6 +78,10 @@ const Hero = () => {
 
       <div id="sponsors">
         <SponsorsComponent />
+      </div>
+
+      <div id="panels">
+        <PanelsComponent />
       </div>
 
       <div id="speakers">
