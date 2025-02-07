@@ -11,6 +11,9 @@ import SpeakersComponent from './Speakers/SpeakersComponent';
 import GrantsComponent from './Grants/GrantsComponent';
 import WhatComponent from './What/WhatComponent';
 import PanelsComponent from './Panels/PanelsComponent';
+import WaitComponent from './Wait/WaitComponent';
+
+import RegisterComponentL from './RegisterComponent/RegisterComponentL';
 
 
 const Hero = () => {
@@ -39,24 +42,14 @@ const Hero = () => {
 
           <p className="sm:text-xl text-base mt-4 text-black">EPFL, March 7th</p>
         </div>
+        
         <div>
-            <a className="btn btn-primary mt-6 padding-6 text-white" href="/register">Join as attendee</a>
+            <button className="btn btn-primary mt-6 padding-6 text-white" onClick={handleAddToCalendar}  
+              rel="noopener noreferrer" >Save the date</button>
             <a className="btn btn-primary mt-6 ml-4 text-white" href="https://cryptpad.fr/form/#/2/form/view/VIi0a+XML51M6gBUfB484Tl+umj7stQfGVMGf-1AIFs/">Join as speaker</a>
           </div>
         
-        <div className="card w-84 bg-neutral shadow-xl text-white">
-         
-          
-            <div className="card-actions justify-center text-white">
-              <button 
-                className="btn btn-primary btn-block text-white transform transition-transform duration-300 hover:scale-105 active:scale-95"
-                onClick={handleAddToCalendar}
-              >
-                Save the date
-              </button>
-            
-          </div>
-        </div>
+          <RegisterComponentL />
       </div>
 
       <div id="manifesto">
@@ -86,6 +79,8 @@ const Hero = () => {
       <div id="more">
         <WhatComponent />
       </div>
+
+      {/* <WaitComponent /> */}
       <br />
       <br />
 

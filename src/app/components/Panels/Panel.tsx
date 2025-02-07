@@ -3,7 +3,7 @@ import Link from 'next/link';  // Import Next.js Link
 
 const Panel = ({  title, description, link }) => {
   return (
-    <div className="card w-full bg-neutral shadow-xl mb-8 p-4">
+    <div className="card w-full bg-secondary shadow-xl mb-8 p-4">
       <figure className="w-full">
         {/* <Image src={image} alt={title} layout="responsive" width={300} height={200} className="w-full h-auto" /> */}
       </figure>

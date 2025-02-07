@@ -4,7 +4,7 @@ import { FaTelegramPlane, FaTwitter, FaEnvelope } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-r from-[#81a1c1] to-[#5e81ac] text-white py-2 fixed bottom-0 w-full z-50">
+    <footer className="bg-secondary text-white py-2 fixed bottom-0 w-full z-50">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
         <div className="flex items-center gap-2"> {/* Changed to horizontal layout */}
           <span className="text-sm font-bold whitespace-nowrap">
