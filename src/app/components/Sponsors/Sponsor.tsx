@@ -17,7 +17,7 @@ const Sponsor = ({ logo, name, link, tier }) => {
       target="_blank" 
       rel="noopener noreferrer" 
       className={`
-        card w-76 h-48 bg-white shadow-xl mb-8 p-[2px] rounded-xl overflow-hidden
+        card h-76 h-48 bg-white shadow-xl mb-8 p-[2px] rounded-xl overflow-hidden
         ${borderColor[tier]}
       `}
     >

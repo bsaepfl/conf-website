@@ -17,7 +17,7 @@ const DiscoverSuiView = () => {
           <EventCard
             color="bg-white"
             title="Mina"
-            description="la track de mina"
+            description="To be annouced soon..."
             footer={
               <div className="flex justify-center">
                 <DiscoverButton
@@ -31,7 +31,7 @@ const DiscoverSuiView = () => {
           <EventCard
             color="bg-white"
             title="Hedera"
-            description="la track de hedera"
+            description="To be annouced soon..."
             footer={
               <div className="flex justify-center">
                 <DiscoverButton
@@ -45,7 +45,7 @@ const DiscoverSuiView = () => {
           <EventCard
             color="bg-white"
             title="Hylé"
-            description="la track de hylé"
+            description="To be annouced soon..."
             footer={
               <div className="flex justify-center">
                 <DiscoverButton

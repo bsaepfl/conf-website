@@ -15,25 +15,26 @@ export default {
       },
     },
   },
-  daisyui: {
-    themes: [
-      {
-        mytheme: {
-          "primary": "#BCCEFB",
-          "secondary": "#A99AEA",
-          "accent": "#BCCEFB",
-          "neutral": "#3d4451",
-          "base-100": "#000000",
-        },
-      },
-      "dark",
-      "cupcake",
-    ],
-  },
   plugins: [
     require('daisyui'),
   ],
   daisyui: {
-    themes: ["nord"], // This enables only the retro theme
+    themes: [
+      {
+        myCustomTheme: {
+          primary: '#b949d7',   // Vibrant Purple
+          secondary: '#b4a6ed', // Lavender Mist
+          accent: '#bccefb',    // Sky Blue
+          neutral: '#6593b3',   // Steel Blue
+          'base-100': '#f7f7f7',// Light Gray (background)
+          'base-200': '#e5e7eb',// Light Gray (background)
+          'base-300': '#d1d5db',// Light Gray (background)
+          'base-content': '#1f2937',// Light Gray (background)
+          info: '#e0e8f0',      // Soft Blue
+          success: '#86e1b9',   // Mint Green
+          warning: '#fbbf24',   // Warm Yellow
+          error: '#ef4444',     // Red for errors
+        },
+    },], // This enables only the retro theme
   },
 } satisfies Config;

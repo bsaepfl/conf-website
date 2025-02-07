@@ -79,11 +79,12 @@ const SponsorsComponent = () => {
 
 
   return (
-    <div className="relative container mx-auto py-4 md:py-8 px-4 md:px-8">
 
-      <h1 className="
-  text-3xl      // smaller on mobile
-  md:text-4xl   // larger on desktop
+    <div className="relative container mx-auto py-8">
+<h1 className="
+  sm:text-4xl 
+  text-2xl
+
   font-bold 
   text-center 
   mb-4 
