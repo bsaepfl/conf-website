@@ -75,7 +75,7 @@ const SpeakersComponent = () => {
   duration-300
   hover:scale-105
 ">To be announced soon...</h1>
-<a className="btn btn-primary mt-6 ml-4 text-white" href="https://cryptpad.fr/form/#/2/form/view/VIi0a+XML51M6gBUfB484Tl+umj7stQfGVMGf-1AIFs/">Join as speaker</a>
+
 
 
       {/* Grid Section */}

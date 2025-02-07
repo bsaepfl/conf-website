@@ -82,9 +82,8 @@ const SponsorsComponent = () => {
 
     <div className="relative container mx-auto py-8">
 <h1 className="
-  sm:text-4xl 
-  text-2xl
-
+  text-3xl      // smaller on mobile
+  md:text-4xl   // larger on desktop
   font-bold 
   text-center 
   mb-4 
