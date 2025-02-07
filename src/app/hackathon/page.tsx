@@ -46,7 +46,7 @@ export default function Hackathon() {
           <FaqView />
         </div>
 
-        <div id="rules" className="w-full">
+        <div id="rules" className="w-full mb-12">
           <RulesView />
         </div>
       </main>

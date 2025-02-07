@@ -1,8 +1,6 @@
 // src/components/Sponsors/SponsorsComponent.tsx
 import React from 'react';
 import Sponsor from './Sponsor';
-import StarsBackground from '../StarsBackground';
-import placeholder from '../../images/tickets/placeholder.webp';
 import './SponsorsComponent.css'; // Create this CSS file
 import mina from '../../images/sponsors/mina.png';
 import cardinal from '../../images/sponsors/cardinal.png';
@@ -49,9 +47,9 @@ const SponsorsComponent = () => {
   // With hover effects and transitions
 
 
-// Or with more elaborate gradient effects
-const tierGradientStyles = {
-  platinum: `
+  // Or with more elaborate gradient effects
+  const tierGradientStyles = {
+    platinum: `
     shine-effect
     bg-gradient-to-r from-[#1a1a1a] via-[#404040] to-[#1a1a1a]
     hover:from-[#2a2a2a] hover:via-[#505050] hover:to-[#2a2a2a]
@@ -59,34 +57,37 @@ const tierGradientStyles = {
     transition-all duration-300
     relative
   `,
-  gold: `
+    gold: `
     bg-gradient-to-r from-[#FFD700] to-[#FFA500]
     hover:from-[#FFE700] hover:to-[#FFB500]
     text-transparent bg-clip-text
     transition-all duration-300
   `,
-  silver: `
+    silver: `
     bg-gradient-to-r from-[#C0C0C0] to-[#A9A9A9]
     hover:from-[#D0D0D0] hover:to-[#B9B9B9]
     text-transparent bg-clip-text
     transition-all duration-300
   `,
-  bronze: `
+    bronze: `
     bg-gradient-to-r from-[#CD7F32] to-[#8B4513]
     hover:from-[#DD8F42] hover:to-[#9B5523]
     text-transparent bg-clip-text
     transition-all duration-300
   `,
-};
+  };
 
 
   return (
-    <div className="relative container mx-auto py-8">
-<h1 className="
-  text-4xl 
+    <div className="relative container mx-auto py-4 md:py-8 px-4 md:px-8">
+
+      <h1 className="
+  text-3xl      // smaller on mobile
+  md:text-4xl   // larger on desktop
   font-bold 
   text-center 
-  mb-8 
+  mb-4 
+  md:mb-8 
   title-shine 
   bg-clip-text 
   text-transparent
@@ -94,13 +95,23 @@ const tierGradientStyles = {
   duration-300
   hover:scale-105
 ">
-  SPONSORS
-</h1>
+        SPONSORS
+      </h1>
+
       {tiers.map((tier) => (
         <div key={tier} className="mb-8">
-          <h2 className={`text-2xl font-bold text-center mb-4 ${tierGradientStyles[tier]}`}>
+          <h2 className={`
+  text-xl       // smaller on mobile
+  md:text-2xl   // larger on desktop
+  font-bold 
+  text-center 
+  mb-2 
+  md:mb-4 
+  ${tierGradientStyles[tier]}
+`}>
             {tierTitles[tier]}
           </h2>
+
 
           <div className="flex flex-wrap justify-center gap-8">
             {sponsorsData
