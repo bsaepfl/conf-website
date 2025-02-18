@@ -51,7 +51,7 @@ const NavbarH = () => {
           <li><button onClick={() => scrollToSection('location')} className='text-l font-bold bg-clip-text text-white'>Location</button></li>
           <li><button onClick={() => scrollToSection('faq')} className='text-l font-bold bg-clip-text text-white'>FAQ</button></li>
           <li><button onClick={() => scrollToSection('rules')} className='text-l font-bold bg-clip-text text-white'>Rules</button></li>
-<li><Link href="/side-events">Side Events</Link></li> */}
+<li><Link href="/side-events">Side Events</Link></li> 
           {/* <li><Link href="/grants">Grants</Link></li> */}
           
           {/* <li><Link href="/workshops">Workshops</Link></li> */}
@@ -60,7 +60,7 @@ const NavbarH = () => {
       </div>
       
 
-      <div className="navbar-end flex space-x-4">
+      <div className="navbar-end  gap-1">
         <a href="/" 
           className=' p-2 rounded-lg hover:bg-blue-200'
         >
