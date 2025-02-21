@@ -20,7 +20,7 @@ const RulesView = () => {
         {/* <div> */}
         <div className="w-full flex items-center justify-center lg:justify-start">
           <a
-            href="/assets/BSA_Hackathon_Rules.pdf"
+            href="/Assets/BSA_Hackathon_Rules.pdf"
             target="_blank"
             download
             className="w-fit gap-3 uppercase rounded-md bg-dark-100 hover:bg-white border border-black text-black font-medium hover:text-dark-100 hover:border-dark-100 duration-100 px-10 py-2"

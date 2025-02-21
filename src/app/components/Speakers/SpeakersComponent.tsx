@@ -53,7 +53,7 @@ const speakersData = [
   {
     name: 'Feltroid Prime',
     image: FP,
-    description: 'Applied Cryptography engineer',
+    description: 'Applied Cryptography engineer, member of Herodotus and Garaga',
     socials: {
       twitter: '',
       linkedin: '',
@@ -231,7 +231,7 @@ const SpeakersComponent = () => {
         {speakersData.map((speaker, index) => (
           <div
             key={index}
-            className="card bg-neutral text-white shadow-md p-6 flex flex-col items-start space-y-4 h-auto relative"
+            className="card bg-secondary text-white shadow-md p-6 flex flex-col items-start space-y-4 h-auto relative"
           >
             {/* Photo Section */}
             <div className="avatar flex justify-center w-full">
