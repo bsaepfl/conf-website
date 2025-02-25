@@ -1,18 +1,19 @@
 'use client';
 
-import Navbar from '../components/Navbar';
+
 import NavbarH from '../components/NavbarH';
 import Footer from '../components/Footer';
 import Hero from '../components/Hackathon/HeroView';
 import ApplyView from '../components/Hackathon/ApplyView';
-import ScheduleView from '../components/Agenda/ScheduleView';
+
 import PrizeView from '../components/Hackathon/PrizeView';
 import DiscoverSuiView from '../components/Hackathon/DiscoverSuiView';
 import LocationView from '../components/Hackathon/LocationView';
 import FaqView from '../components/Hackathon/FaqView';
 import RulesView from '../components/Hackathon/RulesView';
 import StarsBackground from '../components/StarsBackground';
-import SelectorComponent from '../components/Selector/SelectorComponent';
+import ScheduleView from '../components/Agenda/ScheduleView';
+
 
 
 export default function Hackathon() {
@@ -30,7 +31,9 @@ export default function Hackathon() {
 
         {/* <div id="schedule" className="w-full">
           <ScheduleView />
-        </div> */}
+        </div>  */}
+
+        {/* TODO: timeline */}
 
         <div id="prize" className="w-full">
           <PrizeView />

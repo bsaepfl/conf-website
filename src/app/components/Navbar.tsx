@@ -47,7 +47,7 @@ const Navbar = () => {
           <li><button onClick={() => scrollToSection('sponsors')} className='text-l font-bold bg-clip-text '>Sponsors</button></li>
           <li><button onClick={() => scrollToSection('panels')} className='text-l font-bold bg-clip-text '>Panels</button></li>
           <li><button onClick={() => scrollToSection('speakers')} className='text-l font-bold bg-clip-text '>Speakers</button></li>
-          <li><button onClick={() => scrollToSection('agenda')} className='text-l font-bold bg-clip-text '>Agenda</button></li>
+          <li><button onClick={() => scrollToSection('agenda')} className='text-l font-bold bg-clip-text '>Schedule</button></li>
           <li><button onClick={() => scrollToSection('more')} className='text-l font-bold bg-clip-text '>More</button></li> 
         </ul>
       </div>

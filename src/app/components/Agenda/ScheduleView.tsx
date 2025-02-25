@@ -18,7 +18,8 @@ const navigationEvent: DayProps[] = [
         label: "Sun, 9 Mar",
         date: "2025-03-09",
         description: "Day 3"
-    }
+    },
+    
 ];
 
 const schedule: ScheduleEventType[] = [
@@ -30,6 +31,7 @@ const schedule: ScheduleEventType[] = [
         duration: 1,
         value: "2025-03-07"
     },
+    
     {
         date: new Date("2025-03-07T09:00:00"),
         name: "Opening Keynote: Future of Technology",
@@ -93,9 +95,8 @@ const schedule: ScheduleEventType[] = [
         duration: 2,
         value: "2025-03-07"
     },
-
-    // Day 2 (March 8, 2025)
-    {
+     // Day 2 (March 8, 2025)
+     {
         date: new Date("2025-03-08T08:30:00"),
         name: "Morning Coffee & Registration",
         icon: "breakfast",
@@ -208,7 +209,7 @@ const schedule: ScheduleEventType[] = [
         icon: "ceremonyClose",
         duration: 1,
         value: "2025-03-09"
-    }
+    },
 ];
 
 const ScheduleView: React.FC = () => {
