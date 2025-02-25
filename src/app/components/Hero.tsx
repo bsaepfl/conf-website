@@ -12,6 +12,7 @@ import GrantsComponent from './Grants/GrantsComponent';
 import WhatComponent from './What/WhatComponent';
 import PanelsComponent from './Panels/PanelsComponent';
 import WaitComponent from './Wait/WaitComponent';
+import Schedule from './Schedule/Schedule';
 
 import RegisterComponentL from './RegisterComponent/RegisterComponentL';
 
@@ -73,7 +74,7 @@ const Hero = () => {
       <div id="agenda" className="w-full max-w-7xl ">
   
           
-          {/* <ScheduleView /> */}
+          <Schedule />
         </div>
 
       <div id="more">

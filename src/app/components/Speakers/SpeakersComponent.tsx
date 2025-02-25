@@ -21,12 +21,14 @@ import CK from '../../images/speakers/CK.png';
 import NS from '../../images/speakers/NS.jpeg';
 import PJ from '../../images/speakers/PJ.jpeg';
 import S from '../../images/speakers/S.jpg';
+import JB from '../../images/speakers/JB.jpg';
+import JBW from '../../images/speakers/JBW.jpg';
 
 const speakersData = [
   {
     name: 'Peterson Yuhala',
     image: PY,
-    description: 'Postdoctoral Reasearcher on confidentail computing at UniNE',
+    description: 'Postdoctoral Researcher on confidential computing at UniNE',
     socials: {
       twitter: '',
       linkedin: '',
@@ -44,7 +46,7 @@ const speakersData = [
   {
     name: 'Mate Soos',
     image: MS,
-    description: 'Etherum Foundation',
+    description: 'Ethereum Foundation',
     socials: {
       twitter: '',
       linkedin: '',
@@ -53,7 +55,7 @@ const speakersData = [
   {
     name: 'Feltroid Prime',
     image: FP,
-    description: 'Applied Cryptography engineer, member of Herodotus and Garaga',
+    description: 'Applied Cryptography Engineer, member of Herodotus and Garaga',
     socials: {
       twitter: '',
       linkedin: '',
@@ -62,7 +64,16 @@ const speakersData = [
   {
     name: 'Ziyi Guan',
     image: ZG,
-    description: 'Ph.D. student at the EPFL theory group',
+    description: 'Ph.D. student at the EPFL Theory Group',
+    socials: {
+      twitter: '',
+      linkedin: '',
+    },
+  },
+  {
+    name: 'Jeff Burdges',
+    image: JBW,
+    description: 'Applied Cryptography Researcher at Web3 Foundation',
     socials: {
       twitter: '',
       linkedin: '',
@@ -80,13 +91,12 @@ const speakersData = [
   {
     name: 'Pim Keer',
     image: PK,
-    description: 'Pre Doctoral researcher on Security and Privacy at TuWien',
+    description: 'Pre-doctoral researcher on Security and Privacy at TU Wien',
     socials: {
       twitter: '',
       linkedin: '',
     },
   },
-  
   {
     name: 'Maciej Kalka',
     image: MK,
@@ -99,7 +109,7 @@ const speakersData = [
   {
     name: 'Claude Bardeciej',
     image: q,
-    description: 'Developer relations Engineer at Midnight',
+    description: 'Developer Relations Engineer at Midnight',
     socials: {
       twitter: '',
       linkedin: '',
@@ -108,7 +118,7 @@ const speakersData = [
   {
     name: 'Simon Malatrait',
     image: SM,
-    description: 'Smart Contract Hacker & Developper',
+    description: 'Smart Contract Hacker & Developer',
     socials: {
       twitter: '',
       linkedin: '',
@@ -126,7 +136,7 @@ const speakersData = [
   {
     name: 'Gurgen Arakelov',
     image: GA,
-    description: 'Co-founder & CEO Fairmath',
+    description: 'Co-founder & CEO of Fairmath',
     socials: {
       twitter: '',
       linkedin: '',
@@ -135,7 +145,7 @@ const speakersData = [
   {
     name: 'Sylve Chevet',
     image: SC,
-    description: 'Co-founder & CEO Hylé',
+    description: 'Co-founder & CEO of Hylé',
     socials: {
       twitter: '',
       linkedin: '',
@@ -151,7 +161,7 @@ const speakersData = [
     },
   },
   {
-    name: 'Akaki Mamageishvil',
+    name: 'Akaki Mamageishvili',
     image: AM,
     description: 'Senior Research Scientist at Offchain Labs',
     socials: {
@@ -198,7 +208,16 @@ const speakersData = [
   {
     name: 'Sisyphus',
     image: S,
-    description: '',
+    description: 'Exploration Team Lead at Starkware',
+    socials: {
+      twitter: '',
+      linkedin: '',
+    },
+  },
+  {
+    name: 'Jordi Baylina',
+    image: JB,
+    description: 'Technical Lead at Polygon Hermez zkEVM',
     socials: {
       twitter: '',
       linkedin: '',
