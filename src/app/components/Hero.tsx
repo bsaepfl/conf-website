@@ -61,6 +61,12 @@ const Hero = () => {
         <SponsorsComponent />
       </div>
 
+      <div id="agenda" className="w-full max-w-7xl ">
+  
+          
+          <Schedule />
+        </div>
+
       <div id="panels">
         <PanelsComponent />
       </div>
@@ -71,11 +77,7 @@ const Hero = () => {
 
       {/* <GrantsComponent /> */}
       
-      <div id="agenda" className="w-full max-w-7xl ">
-  
-          
-          <Schedule />
-        </div>
+      
 
       <div id="more">
         <WhatComponent />
