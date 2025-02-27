@@ -44,6 +44,7 @@ const Navbar = () => {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" />
             </svg>
           </label>
+
           <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-4 shadow bg-base-100 rounded-box w-52 gap-6 text-black">
             <li><button onClick={() => scrollToSection('manifesto')} className='text-l font-bold bg-clip-text'>Manifesto</button></li>
             <li><button onClick={() => scrollToSection('sponsors')} className='text-l font-bold bg-clip-text'>Sponsors</button></li>
@@ -51,6 +52,7 @@ const Navbar = () => {
             <li><button onClick={() => scrollToSection('speakers')} className='text-l font-bold bg-clip-text'>Speakers</button></li>
             <li><button onClick={() => scrollToSection('agenda')} className='text-l font-bold bg-clip-text'>Agenda</button></li>
             <li><button onClick={() => scrollToSection('more')} className='text-l font-bold bg-clip-text'>More</button></li>
+
           </ul>
         </div>
         <Link href="/">
@@ -60,12 +62,14 @@ const Navbar = () => {
       
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 text-white">
+
           <li><button onClick={() => scrollToSection('manifesto')} className='text-l font-bold bg-clip-text'>Manifesto</button></li>
           <li><button onClick={() => scrollToSection('sponsors')} className='text-l font-bold bg-clip-text'>Sponsors</button></li>
           <li><button onClick={() => scrollToSection('panels')} className='text-l font-bold bg-clip-text'>Panels</button></li>
           <li><button onClick={() => scrollToSection('speakers')} className='text-l font-bold bg-clip-text'>Speakers</button></li>
           <li><button onClick={() => scrollToSection('agenda')} className='text-l font-bold bg-clip-text'>Schedule</button></li>
           <li><button onClick={() => scrollToSection('more')} className='text-l font-bold bg-clip-text'>More</button></li> 
+
         </ul>
       </div>
       
