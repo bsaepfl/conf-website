@@ -99,6 +99,10 @@ const Schedule: React.FC = () => {
           </div>
         ))}
       </div>
+      <div className="text-center p-3 mt-6 h-30">
+        <h1 className="text-3xl sm:text-3xl font-bold text-black p-5">And much more during our Hackathon the following days ! </h1>
+        <a href="/hackathon" className='p-4 hover:bg-blue-200 bg-primary rounded-lg text-white'>Check out the Hackathon</a>
+      </div>
     </div>
   );
 };

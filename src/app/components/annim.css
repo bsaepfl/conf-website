@@ -1,0 +1,11 @@
+.annim{
+    position: relative;
+    animation: le 1000ms infinite alternate;
+}
+@keyframes le {
+    0%{top:0px}
+    50%{transform: rotate(1deg);}
+    80%{transform: rotate(-1deg);}
+    100%{top:10px}
+
+}

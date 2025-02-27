@@ -6,7 +6,7 @@ import { useCallback } from 'react';
 import ManifestoComponent from './Manifesto/ManifestoComponent';
 import SponsorsComponent from './Sponsors/SponsorsComponent';
 import ScheduleView from './Agenda/ScheduleView';
-import { Speaker } from 'lucide-react';
+import { Link, Speaker } from 'lucide-react';
 import SpeakersComponent from './Speakers/SpeakersComponent';
 import GrantsComponent from './Grants/GrantsComponent';
 import WhatComponent from './What/WhatComponent';
@@ -36,6 +36,8 @@ const Hero = () => {
     <div className="relative min-h-[75vh] w-full flex flex-col items-center justify-center bg-base-200">
       <StarsBackground />
       <div className="relative z-10 flex flex-col items-center justify-center gap-8 px-4 h-screen">
+        
+
         <div className="text-center">
           
           <h1 className="text-3xl sm:text-6xl font-bold text-black">BSA Blockchain Conference</h1>
@@ -43,7 +45,9 @@ const Hero = () => {
 
           <p className="sm:text-xl text-base mt-4 text-black">EPFL, March 7th</p>
         </div>
-        
+        <div className="justify-center">
+          <a href="/hackathon" className='p-4 hover:bg-blue-200 bg-primary rounded-lg text-white'>Check out the Hackathon</a>
+        </div>
         <div>
             <button className="btn btn-primary mt-6 padding-6 text-white" onClick={handleAddToCalendar}  
               rel="noopener noreferrer" >Save the date</button>
