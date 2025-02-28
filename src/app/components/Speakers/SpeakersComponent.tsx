@@ -23,6 +23,7 @@ import PJ from '../../images/speakers/PJ.jpeg';
 import S from '../../images/speakers/S.jpg';
 import JB from '../../images/speakers/JB.jpg';
 import JBW from '../../images/speakers/JBW.jpg';
+import MO from '../../images/speakers/MO.jpeg';
 
 const speakersData = [
   {
@@ -37,7 +38,7 @@ const speakersData = [
   {
     name: 'Guillaume Michel',
     image: GM,
-    description: 'Research Engineer at Protocol Labs',
+    description: 'Research Engineer at Interplanetary Shipyard',
     socials: {
       twitter: '',
       linkedin: '',
@@ -65,6 +66,15 @@ const speakersData = [
     name: 'Ziyi Guan',
     image: ZG,
     description: 'Ph.D. student at the EPFL Theory Group',
+    socials: {
+      twitter: '',
+      linkedin: '',
+    },
+  },
+  {
+    name: 'Maxim Orlovsky',
+    image: MO,
+    description: 'Director at the Institue for Distributed and Congnitive Systems',
     socials: {
       twitter: '',
       linkedin: '',
