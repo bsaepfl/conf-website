@@ -1,17 +1,12 @@
 // components/Hero.tsx
 'use client';
 import StarsBackground from './StarsBackground';
-import Image from 'next/image';
 import { useCallback } from 'react';
 import ManifestoComponent from './Manifesto/ManifestoComponent';
 import SponsorsComponent from './Sponsors/SponsorsComponent';
-import ScheduleView from './Agenda/ScheduleView';
-import { Link, Speaker } from 'lucide-react';
 import SpeakersComponent from './Speakers/SpeakersComponent';
-import GrantsComponent from './Grants/GrantsComponent';
 import WhatComponent from './What/WhatComponent';
 import PanelsComponent from './Panels/PanelsComponent';
-import WaitComponent from './Wait/WaitComponent';
 import Schedule from './Schedule/Schedule';
 
 import RegisterComponentL from './RegisterComponent/RegisterComponentL';
@@ -39,12 +34,12 @@ const Hero = () => {
         
 
         <div className="text-center">
-          
-          <h1 className="text-3xl sm:text-6xl font-bold text-black">BSA Blockchain Conference</h1>
-          <h1 className="text-xl sm:text-3xl font-bold text-black">Privacy and Verifiability</h1>
+  <h1 className="text-2xl md:text-6xl font-bold text-black ">BSA Blockchain Conference</h1>
+  <h1 className="text-xl font-bold text-black ">Privacy and Verifiability</h1>
+  <p className="sm:text-xl text-base mt-4 text-black">EPFL, March 7th</p>
+</div>
 
-          <p className="sm:text-xl text-base mt-4 text-black">EPFL, March 7th</p>
-        </div>
+
         <div className="justify-center">
           <a href="/hackathon" className='p-4 hover:bg-blue-200 bg-primary rounded-lg text-white'>Check out the Hackathon</a>
         </div>
@@ -65,7 +60,7 @@ const Hero = () => {
         <SponsorsComponent />
       </div>
 
-      <div id="agenda" className="w-full max-w-7xl ">
+      <div id="agenda" className="w-full max-w-7xl z-10">
   
           
           <Schedule />

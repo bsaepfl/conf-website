@@ -1,9 +1,8 @@
 'use client'
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
-import BSALogo from '../images/hero/BSALogo';
 import "./annim.css";
+import Image from 'next/image';
 
 const scrollToSection = (id: string) => {
   const element = document.getElementById(id);
@@ -36,8 +35,8 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="navbar bg-secondary shadow-lg fixed top-0 z-50 font-semibold opacity-100">
-      <div className="navbar-start">
+  <div className="navbar bg-secondary shadow-lg fixed top-0 z-50 font-semibold opacity-100 p-0 lg:p-4">
+    <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -55,13 +54,14 @@ const Navbar = () => {
 
           </ul>
         </div>
-        <Link href="/">
-          <BSALogo classname="w-full btn btn-ghost normal-case p-2" />
+        <Link href="/" >
+          <Image width={50} height={50} src="/images/logo.png" alt="BSA Logo" />
         </Link>
-      </div>
+
+    </div>
       
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1 text-white">
+        <ul className="menu menu-horizontal px-1 text-white gap-2 lg:gap-4">
 
           <li><button onClick={() => scrollToSection('manifesto')} className='text-l font-bold bg-clip-text'>Manifesto</button></li>
           <li><button onClick={() => scrollToSection('sponsors')} className='text-l font-bold bg-clip-text'>Sponsors</button></li>
@@ -73,18 +73,20 @@ const Navbar = () => {
         </ul>
       </div>
       
-      <div className="navbar-end gap-1">
-        <a className='p-2 rounded-lg text-white bg-primary'>
-          Conference
-        </a>
-        <Link 
-          href="/hackathon" 
-          className={`p-2 hover:bg-blue-200 bg-info rounded-lg text-black ${annimActive ? 'annim' : ''}`}
-        >
-          Hackathon
-        </Link>
-        <Link href="/register" className="btn">Register</Link>
-      </div>
+      <div className="navbar-end gap-2 mr-2 sm:justify-between">
+  <a className='p-1 rounded-lg text-white bg-primary text-sm'>
+    Conference
+  </a>
+  <Link 
+    href="/hackathon" 
+    className={`p-1 hover:bg-blue-200 bg-info rounded-lg text-black text-sm ${annimActive ? 'annim' : ''}`}
+  >
+    Hackathon
+  </Link>
+  <Link href="/register" className="btn btn-sm">Register</Link>
+</div>
+
+
     </div>
   );
 };

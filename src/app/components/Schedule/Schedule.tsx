@@ -1,11 +1,5 @@
 import React, { useState } from 'react';
 
-type ScheduleEvent = {
-  time: string;
-  title: string;
-  description?: string;
-};
-
 type Stage = {
   name: string;
   events: {
@@ -83,7 +77,19 @@ const Schedule: React.FC = () => {
 
   return (
     <div className="container mx-auto p-6">
-      <h2 className="text-4xl font-bold text-center mb-12 text-white">
+      <h2 className="
+        text-4xl 
+        font-bold 
+        text-center 
+        mb-12 
+        title-shine 
+        bg-clip-text 
+        text-transparent
+        transition-all
+        duration-300
+        hover:scale-105
+        text-white
+      ">
         Conference Schedule
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -120,7 +126,23 @@ const Schedule: React.FC = () => {
       </div>
       <div className="text-center p-3 mt-6 h-30">
         <h1 className="text-3xl sm:text-3xl font-bold text-black p-5">And much more during our Hackathon the following days!</h1>
-        <a href="/hackathon" className="p-4 hover:bg-blue-200 bg-primary rounded-lg text-white">Check out the Hackathon</a>
+        <a href="/hackathon" className="btn 
+              btn-primary 
+              sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl
+              text-white
+              transition-all 
+              duration-300 
+              ease-in-out
+              hover:scale-105
+              hover:shadow-lg
+              hover:brightness-110
+              active:scale-95
+              active:shadow-md
+              focus:outline-none
+              focus:ring-2
+              focus:ring-offset-2
+              focus:ring-primary
+              ">Check out the Hackathon</a>
       </div>
     </div>
   );
