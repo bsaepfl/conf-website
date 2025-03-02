@@ -32,6 +32,7 @@ import LK from '../../images/speakers/LK.jpeg';
 import MR from '../../images/speakers/MR.jpeg';
 import ABH from '../../images/speakers/ABH.jpeg';
 import VA from '../../images/speakers/VA.jpeg';
+import BS from '../../images/speakers/BS.jpeg';
 import IMH from '../../images/speakers/IMH.jpeg';
 
 const speakersData = [
@@ -102,6 +103,15 @@ const speakersData = [
     name: 'Maxim Orlovsky',
     image: MO,
     description: 'Director at the Institue for Distributed and Congnitive Systems',
+    socials: {
+      twitter: '',
+      linkedin: '',
+    },
+  },
+  {
+    name: 'Bettina Sosa',
+    image: BS,
+    description: 'Head of DevRel at Partisia',
     socials: {
       twitter: '',
       linkedin: '',
