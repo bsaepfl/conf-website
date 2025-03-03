@@ -22,7 +22,7 @@ const Sponsor = ({ logo, name, link, tier }) => {
       `}
     >
       <div className="card-body flex flex-col items-center justify-center bg-white h-full w-full rounded-lg">
-        <Image src={logo} alt={name} width={300} height={300} className="rounded-full mb-4" />
+        <Image src={logo} alt={name} width={300} height={300} className=" mb-4" />
         {/* <h2 className="card-title text-2xl font-bold text-center text-black">{name}</h2> */}
       </div>
     </a>
