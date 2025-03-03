@@ -6,6 +6,8 @@ import mina from '../../images/sponsors/mina.png';
 import cardinal from '../../images/sponsors/cardinal.png';
 import aleph from '../../images/sponsors/aleph.png';
 import tha from '../../images/sponsors/tha.png';
+import taurus from '../../images/sponsors/taurus.png';
+import nil from '../../images/sponsors/nil.jpg';
 
 
 const sponsorsData = [
@@ -33,6 +35,18 @@ const sponsorsData = [
     link: 'https://alephzero.org/',
     tier: 'silver',
   },
+  {
+    logo: taurus,
+    name: '',
+    link: 'https://www.taurushq.com/',
+    tier: 'bronze',
+  },
+  {
+    logo: nil,
+    name: '',
+    link: 'https://nil.foundation/',
+    tier: 'bronze',
+  },
 ];
 
 const SponsorsComponent = () => {
@@ -41,7 +55,7 @@ const SponsorsComponent = () => {
     // platinum: 'Platinum Sponsors',
     gold: 'Gold Sponsors',
     silver: 'Silver Sponsors',
-    // bronze: 'Bronze Sponsors',
+    bronze: 'Bronze Sponsors',
   };
 
   // With hover effects and transitions
