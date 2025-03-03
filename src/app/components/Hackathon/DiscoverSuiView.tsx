@@ -23,7 +23,7 @@ const DiscoverSuiView = () => {
                 <DiscoverButton
                   ping={false}
                   title="View"
-                  href="https://docs.sui.io/"
+                  href="https://minaprotocol.com/"
                 />
               </div>
             }
@@ -37,7 +37,7 @@ const DiscoverSuiView = () => {
                 <DiscoverButton
                   ping={false}
                   title="Learn More"
-                  href="https://docs.sui.io/learn/why-move"
+                  href="https://www.hashgraph.swiss/"
                 />
               </div>
             }
@@ -51,7 +51,7 @@ const DiscoverSuiView = () => {
                 <DiscoverButton
                   ping={false}
                   title="Learn More"
-                  href="https://docs.sui.io/learn/why-move"
+                  href="https://www.hyle.eu/"
                 />
               </div>
             }
