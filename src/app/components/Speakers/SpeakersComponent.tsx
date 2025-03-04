@@ -34,8 +34,11 @@ import ABH from '../../images/speakers/ABH.jpeg';
 import VA from '../../images/speakers/VA.jpeg';
 import BS from '../../images/speakers/BS.jpeg';
 import IMH from '../../images/speakers/IMH.jpeg';
+import LH from '../../images/speakers/LH.jpeg';
+import R from '../../images/speakers/R.jpg';
 import T from '../../images/speakers/T.jpeg';
 import AT from '../../images/speakers/AT.jpeg';
+
 
 const speakersData = [
   {
@@ -156,6 +159,15 @@ const speakersData = [
     },
   },
   {
+    name: 'Rie',
+    image: R,
+    description: 'Chief of staff at Intmax',
+    socials: {
+      twitter: '',
+      linkedin: '',
+    },
+  },
+  {
     name: 'Yunus Gürlek',
     image: YG,
     description: 'Mina Community Core Developer - zkVot',
@@ -231,6 +243,15 @@ const speakersData = [
     name: 'Gurgen Arakelov',
     image: GA,
     description: 'Co-founder & CEO of Fairmath',
+    socials: {
+      twitter: '',
+      linkedin: '',
+    },
+  },
+  {
+    name: 'Leona Hioki',
+    image: LH,
+    description: 'Co-founder of Intmax',
     socials: {
       twitter: '',
       linkedin: '',
