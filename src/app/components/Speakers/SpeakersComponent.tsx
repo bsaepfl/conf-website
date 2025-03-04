@@ -36,6 +36,9 @@ import BS from '../../images/speakers/BS.jpeg';
 import IMH from '../../images/speakers/IMH.jpeg';
 import LH from '../../images/speakers/LH.jpeg';
 import R from '../../images/speakers/R.jpg';
+import T from '../../images/speakers/T.jpeg';
+import AT from '../../images/speakers/AT.jpeg';
+
 
 const speakersData = [
   {
@@ -282,9 +285,27 @@ const speakersData = [
     },
   },
   {
+    name: 'Amit Taaki',
+    image: AT,
+    description: 'Darkfi',
+    socials: {
+      twitter: '',
+      linkedin: '',
+    },
+  },
+  {
     name: 'Alexander Linton',
     image: AL,
     description: 'President of the Session Technology Foundation',
+    socials: {
+      twitter: '',
+      linkedin: '',
+    },
+  },
+  {
+    name: 'Trang',
+    image: T,
+    description: 'Tax Lawyer',
     socials: {
       twitter: '',
       linkedin: '',
