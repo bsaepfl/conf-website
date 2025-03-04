@@ -305,7 +305,7 @@ const speakersData = [
   {
     name: 'Trang',
     image: T,
-    description: 'Tax Lawyer',
+    description: 'Founder of Holistik',
     socials: {
       twitter: '',
       linkedin: '',
