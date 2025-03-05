@@ -38,6 +38,9 @@ import LH from '../../images/speakers/LH.jpeg';
 import R from '../../images/speakers/R.jpg';
 import T from '../../images/speakers/T.jpeg';
 import AT from '../../images/speakers/AT.jpeg';
+import ER from '../../images/speakers/ER.jpg';
+import DS from '../../images/speakers/DS.jpeg';
+import PM from '../../images/speakers/PM.jpeg';
 
 
 const speakersData = [
@@ -267,6 +270,24 @@ const speakersData = [
     },
   },
   {
+    name: 'Piotr Mikołajczyk',
+    image: PM,
+    description: 'Aleph Zero',
+    socials: {
+      twitter: '',
+      linkedin: '',
+    },
+  },
+  {
+    name: 'Damian Straszak',
+    image: DS,
+    description: 'Aleph Zero',
+    socials: {
+      twitter: '',
+      linkedin: '',
+    },
+  },
+  {
     name: 'Kassandra.eth',
     image: K,
     description: 'Cryptographer',
@@ -369,6 +390,15 @@ const speakersData = [
     name: 'Jordi Baylina',
     image: JB,
     description: 'Technical Lead at Polygon Hermez zkEVM',
+    socials: {
+      twitter: '',
+      linkedin: '',
+    },
+  },
+  {
+    name: 'Einar Rasmussen',
+    image: ER,
+    description: 'Inversed Tech',
     socials: {
       twitter: '',
       linkedin: '',
