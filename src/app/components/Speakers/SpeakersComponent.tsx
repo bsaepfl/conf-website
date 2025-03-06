@@ -41,6 +41,7 @@ import AT from '../../images/speakers/AT.jpeg';
 import ER from '../../images/speakers/ER.jpg';
 import DS from '../../images/speakers/DS.jpeg';
 import PM from '../../images/speakers/PM.jpeg';
+import JD from '../../images/speakers/JD.jpeg';
 
 
 const speakersData = [
@@ -234,6 +235,15 @@ const speakersData = [
     },
   },
   {
+    name: 'Julian Deschler',
+    image: JD,
+    description: 'Co-Founder of Arcium',
+    socials: {
+      twitter: '',
+      linkedin: '',
+    },
+  }
+  {
     name: 'Handan Alper',
     image: HA,
     description: 'Researcher at =Nil',
@@ -389,7 +399,7 @@ const speakersData = [
   {
     name: 'Jordi Baylina',
     image: JB,
-    description: 'Technical Lead at Polygon Hermez zkEVM',
+    description: 'Co-Founder of Polygon & Privado ID.',
     socials: {
       twitter: '',
       linkedin: '',

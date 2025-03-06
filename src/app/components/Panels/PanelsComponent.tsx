@@ -13,13 +13,13 @@ const panelsData = [
     title: 'Privacy applications',
     description: 'Does privacy have use cases?',
     link: "https://www.forbes.com/councils/forbestechcouncil/2024/02/15/blockchain-and-data-privacy-the-future-of-technology-compliance/",
-    speakers: ['Vlad Avesalon', 'Yunus Gürlek', 'Luis Bezzenberger', 'Einar Rasmussen'],
+    speakers: ['Vlad Avesalon', 'Yunus Gürlek', 'Luis Bezzenberger', 'Einar Rasmussen', 'Bettina Sosa'],
   },
   {
     title: 'TradFI & DeFi',
     description: 'How can privacy integrate with TradFi and DeFi?',
     link: "https://blog.economie-numerique.net/2022/02/17/differences-between-decentralized-finance-defi-and-traditional-finance-concerning-privacy/",
-    speakers: ['Isla Munro', 'Bettina Sosa', 'JP Aumasson', 'Damian Straszak', 'Micha Roon'],
+    speakers: ['Isla Munro', 'JP Aumasson', 'Damian Straszak', 'Micha Roon'],
   },
   {
     title: 'Regulations',
