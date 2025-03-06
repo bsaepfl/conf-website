@@ -41,6 +41,7 @@ import AT from '../../images/speakers/AT.jpeg';
 import ER from '../../images/speakers/ER.jpg';
 import DS from '../../images/speakers/DS.jpeg';
 import PM from '../../images/speakers/PM.jpeg';
+import BQ from '../../images/speakers/BQ.jpeg';
 import JD from '../../images/speakers/JD.jpeg';
 
 
@@ -242,7 +243,7 @@ const speakersData = [
       twitter: '',
       linkedin: '',
     },
-  }
+  },
   {
     name: 'Handan Alper',
     image: HA,
@@ -373,6 +374,15 @@ const speakersData = [
     name: 'Vlad Avelson',
     image: VA,
     description: 'Zuitzerland and Cosimo Capital',
+    socials: {
+      twitter: '',
+      linkedin: '',
+    },
+  },
+  {
+    name: 'Bastiaan Quast',
+    image: BQ,
+    description: 'ValiQ Security GmbH',
     socials: {
       twitter: '',
       linkedin: '',
