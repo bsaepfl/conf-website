@@ -22,16 +22,7 @@ const Navbar = () => {
       
       
 
-      <div className="navbar-end  gap-1">
-        <a
-          className=' p-2 rounded-lg text-white bg-primary'
-        >
-          Conference
-        </a>
-        <Link href="/hackathon" className='p-2 hover:bg-blue-200 rounded-lg'>Hackathon</Link>
-
-        <Link href="/register" className="btn ">Register</Link>
-      </div>
+    
     </div>
   )
 }
