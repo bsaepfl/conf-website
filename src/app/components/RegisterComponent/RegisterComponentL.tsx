@@ -20,7 +20,7 @@ const RegisterComponentL = () => {
         >
           <div className="relative w-full aspect-[16/9] min-h-[250px] overflow-hidden">
   <iframe 
-    src="https://lu.ma/embed/calendar/cal-KuAvNkii7TFKkpK/events" 
+    src="https://lu.ma/embed/calendar/cal-KuAvNkii7TFKkpK/events?nocache=true"
     className="absolute inset-0 rounded-xl"
     style={{ 
       width: "140%",  // Increase width to capture more content

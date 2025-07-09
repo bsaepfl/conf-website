@@ -33,15 +33,15 @@ const Hero = () => {
       
         <div className="flex flex-col items-center gap-10 w-full 2xl:w-[700px]">
           <h1 className="text-4xl md:text-5xl font-bold text-center text-black flex-2">
-            Privacy and Verifiability
+            Sui x BSA  
             <br />
-            Hackathon
+            Hackathon III
           </h1>
           <BoxText
             text={
               <p className="text-black max-w-[400px] m-5 mb-3 font-normal text-center">
-                Participate in the first edition of the{" "}
-                <span className="font-semibold">BSA privacy and verifiability Hackathon </span> at EPFL
+                Participate in the third edition of the{" "}
+                <span className="font-semibold">Sui x BSA Hackathon </span> at EPFL
                 campus and compete for an outstanding{" "}
                 <span className="font-semibold">$15,000</span> prize pool.
               </p>
@@ -49,7 +49,7 @@ const Hero = () => {
             boxColor="border-dark-450"
           />
           <p className="md:text-xl font-light text-center text-black">
-            8 - 9 March — EPFL CAMPUS
+            27 - 28 September — EPFL CAMPUS
           </p>
           <a className="btn btn-primary mt-6 padding-6 text-white" href="/register">Join as hacker</a>
         </div>

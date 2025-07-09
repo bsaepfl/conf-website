@@ -19,8 +19,8 @@ const PrizeView = () => {
 
         <p className="w-full max-w-[1100px] text-black">
           From <b className="font-semibold">March 8-9</b>, we are welcoming
-          builders from around the globe to participate in the First Edition of the{" "}
-          <b className="font-semibold">Privacy and Verifiability Hackathon</b> at EPFL, a
+          builders from around the globe to participate in the Third Edition of the{" "}
+          <b className="font-semibold">Sui x BSA Hackathon</b> at EPFL, a
           prestigious institution at the forefront of technology and innovation.
           <br /> <br /> Get to win over{" "}
           <b className="font-semibold">$15,000 USD</b> in prizes and build

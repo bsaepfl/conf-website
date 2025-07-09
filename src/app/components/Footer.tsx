@@ -32,7 +32,7 @@ const Footer = () => {
             Developed by
           </span>
           <span className="text-sm">
-            Loris, Jules, Guillaume
+            Jules, Loris 
           </span>
         </div>
       </div>

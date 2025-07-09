@@ -24,7 +24,7 @@ const ApplyView = () => {
         <p>
           <BsArrowRight className="inline" /> Sign in or sign up for a Devfolio
           account using your email, Google, GitHub, or Ethereum. <br />
-          <BsArrowRight className="inline" /> Apply to the Privacy and Verifiability 
+          <BsArrowRight className="inline" /> Apply to the Sui x BSA III
           Hackathon on Devfolio.
           <br />
           <BsArrowRight className="inline" /> Join or create a team, or you can
