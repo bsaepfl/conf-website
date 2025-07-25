@@ -43,7 +43,7 @@ const Hero = () => {
                 Participate in the third edition of the{" "}
                 <span className="font-semibold">Sui x BSA Hackathon </span> at EPFL
                 campus and compete for an outstanding{" "}
-                <span className="font-semibold">$15,000</span> prize pool.
+                <span className="font-semibold">$20,000</span> prize pool.
               </p>
             }
             boxColor="border-dark-450"

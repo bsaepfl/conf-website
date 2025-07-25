@@ -50,9 +50,9 @@ export default function Hackathon() {
           <FaqView />
         </div>
 
-        <div id="rules" className="w-full mb-12">
+        {/* <div id="rules" className="w-full mb-12">
           <RulesView />
-        </div>
+        </div> */}
       </main>
       <Footer />
     </div>
