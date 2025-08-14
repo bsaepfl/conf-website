@@ -258,7 +258,7 @@ export const faqQuestions: FaqType[] = [
   {
     question: "Where is it?",
     answer:
-      "The Privacy and Verifiability Hackathon will take place in EPFL’s Lausanne campus, BC Building. You can find directions in the section above.",
+      "The Sui x BSA III Hackathon will take place in EPFL’s Lausanne campus, BC Building. You can find directions in the section above.",
   },
   {
     question: "What should I bring?",
@@ -270,11 +270,11 @@ export const faqQuestions: FaqType[] = [
     answer:
       "We have booked a youth hostel for foreign participants. If you are a local participant, you can go home to sleep. We will also have a quiet room for naps.",
   },
-  // {
-  //   question: "Will my travel be reimbursed?",
-  //   answer:
-  //     "We will reimburse up to 150 CHF of travel from outside of Switzerland, and 50 CHF of travel within Switzerland outside of the Lausanne area, upon presentation of receipts and a project submission at the end of the event.",
-  // },
+  {
+    question: "Will my travel be reimbursed?",
+    answer:
+      "There is a travel grant of 150 usdc available for non-local participants. To apply, please fill in the travel grant application form.",
+  },
   {
     question: "What if I don't have a team?",
     answer:

@@ -5,210 +5,114 @@ import ScheduleEvent from './ScheduleEvent';
 
 const navigationEvent: DayProps[] = [
     {
-        label: "Fri, 27 Sep",
+        label: "Sat, 27 Sep",
         date: "2025-09-27",
         description: "Day 1"
     },
     {
-        label: "Sat, 28 Sep",
+        label: "Sun, 28 Sep",
         date: "2025-09-28",
         description: "Day 2"
-    },
-    {
-        label: "Sun, 29 Sep",
-        date: "2025-09-29",
-        description: "Day 3"
     },
     
 ];
 
 const schedule: ScheduleEventType[] = [
     
-    {
-        date: new Date("2025-09-27T08:00:00"),
-        name: "Registration & Welcome Coffee",
-        icon: "registration",
-        duration: 1,
-        value: "2025-09-27"
-    },
     
-    {
-        date: new Date("2025-09-27T09:00:00"),
-        name: "Opening Keynote: Future of Technology",
-        icon: "presentation",
-        duration: 1,
+     // Day 1 (Sep 27, 2025)
+     {
+        date: new Date("2025-09-27T08:30:00"),
+        name: "Registration & Breakfast",
+        icon: "breakfast",
+        duration: 1.5,
         value: "2025-09-27"
     },
     {
         date: new Date("2025-09-27T10:00:00"),
-        name: "Coffee Break & Networking",
-        icon: "snacks",
-        duration: 0.5,
+        name: "Opening Ceremony",
+        icon: "ceremonyOpen",
+        duration: 0.25,
         value: "2025-09-27"
     },
     {
         date: new Date("2025-09-27T10:30:00"),
-        name: "Panel Discussion: AI in Industry",
+        name: "Workshops",
+        icon: "workshop",
+        duration: 1,
+        value: "2025-09-27"
+    },
+    {
+        date: new Date("2025-09-27T11:30:00"),
+        name: "Team Buidling",
         icon: "team",
-        duration: 1.5,
+        duration: 0.5,
         value: "2025-09-27"
     },
     {
         date: new Date("2025-09-27T12:00:00"),
-        name: "Lunch Break",
-        icon: "meal",
+        name: "Hacking Starts",
+        icon: "code",
         duration: 1.5,
         value: "2025-09-27"
     },
     {
-        date: new Date("2025-09-27T13:30:00"),
-        name: "Technical Workshop: Cloud Architecture",
-        icon: "workshop",
-        duration: 2,
-        value: "2025-09-27"
-    },
-    {
-        date: new Date("2025-09-27T15:30:00"),
-        name: "Afternoon Break",
+        date: new Date("2025-09-27T12:30:00"),
+        name: "Brunch",
         icon: "snacks",
         duration: 0.5,
         value: "2025-09-27"
     },
     {
-        date: new Date("2025-09-27T16:00:00"),
-        name: "Expert Talk: Cybersecurity Trends",
-        icon: "presentation",
+        date: new Date("2025-09-27T18:30:00"),
+        name: "Dinner",
+        icon: "meal",
         duration: 1,
         value: "2025-09-27"
     },
+
+    // Day 2 (Sep 28, 2025)
     {
-        date: new Date("2025-09-27T17:00:00"),
-        name: "Lightning Talks Session",
-        icon: "presentation",
+        date: new Date("2025-09-28T00:00:00"),
+        name: "Midnight Snack",
+        icon: "snacks",
         duration: 1,
-        value: "2025-09-27"
+        value: "2025-09-28"
     },
     {
-        date: new Date("2025-09-27T19:00:00"),
-        name: "Welcome Reception",
-        icon: "team",
-        duration: 2,
-        value: "2025-09-27"
-    },
-     // Day 2 (March 8, 2025)
-     {
-        date: new Date("2025-09-28T08:30:00"),
-        name: "Morning Coffee & Registration",
+        date: new Date("2025-09-28T07:00:00"),
+        name: "Breakfast",
         icon: "breakfast",
-        duration: 0.5,
+        duration: 2,
         value: "2025-09-28"
     },
     {
-        date: new Date("2025-09-28T09:00:00"),
-        name: "Keynote: Digital Transformation",
-        icon: "presentation",
+        date: new Date("2025-09-28T13:00:00"),
+        name: "Hacking Ends",
+        icon: "projectSubmission",
+        duration: 0,
+        value: "2025-09-28"
+    },
+    {
+        date: new Date("2025-09-28T13:00:00"),
+        name: "Lunch",
+        icon: "meal",
         duration: 1,
         value: "2025-09-28"
     },
     {
-        date: new Date("2025-09-28T10:00:00"),
-        name: "Coffee Break",
-        icon: "snacks",
-        duration: 0.5,
-        value: "2025-09-28"
-    },
-    {
-        date: new Date("2025-09-28T10:30:00"),
-        name: "Workshop: DevOps Best Practices",
-        icon: "workshop",
-        duration: 1.5,
-        value: "2025-09-28"
-    },
-    {
-        date: new Date("2025-09-28T12:00:00"),
-        name: "Lunch & Poster Sessions",
-        icon: "meal",
-        duration: 1.5,
-        value: "2025-09-28"
-    },
-    {
-        date: new Date("2025-09-28T13:30:00"),
-        name: "Panel: Future of Web Development",
-        icon: "team",
-        duration: 1.5,
+        date: new Date("2025-09-28T13:00:00"),
+        name: "Judging",
+        icon: "judging",
+        duration: 2,
         value: "2025-09-28"
     },
     {
         date: new Date("2025-09-28T15:00:00"),
-        name: "Afternoon Break",
-        icon: "snacks",
-        duration: 0.5,
-        value: "2025-09-28"
-    },
-    {
-        date: new Date("2025-09-28T15:30:00"),
-        name: "Technical Deep Dive: Microservices",
-        icon: "code",
-        duration: 1.5,
-        value: "2025-09-28"
-    },
-    {
-        date: new Date("2025-09-28T17:00:00"),
-        name: "Evening Networking Event",
-        icon: "team",
-        duration: 2,
-        value: "2025-09-28"
-    },
-
-    // Day 3 (March 9, 2025)
-    {
-        date: new Date("2025-09-29T09:00:00"),
-        name: "Morning Coffee",
-        icon: "breakfast",
-        duration: 0.5,
-        value: "2025-09-29"
-    },
-    {
-        date: new Date("2025-09-29T09:30:00"),
-        name: "Workshop: Machine Learning in Production",
-        icon: "workshop",
-        duration: 2,
-        value: "2025-09-29"
-    },
-    {
-        date: new Date("2025-09-29T11:30:00"),
-        name: "Coffee Break",
-        icon: "snacks",
-        duration: 0.5,
-        value: "2025-09-29"
-    },
-    {
-        date: new Date("2025-09-29T12:00:00"),
-        name: "Panel: Ethics in Technology",
-        icon: "team",
-        duration: 1,
-        value: "2025-09-29"
-    },
-    {
-        date: new Date("2025-09-29T13:00:00"),
-        name: "Lunch Break",
-        icon: "meal",
-        duration: 1,
-        value: "2025-09-29"
-    },
-    {
-        date: new Date("2025-09-29T14:00:00"),
-        name: "Closing Keynote",
-        icon: "presentation",
-        duration: 1,
-        value: "2025-09-29"
-    },
-    {
-        date: new Date("2025-09-29T15:00:00"),
         name: "Closing Ceremony & Awards",
         icon: "ceremonyClose",
-        duration: 1,
-        value: "2025-09-29"
+        duration: 2,
+        value: "2025-09-28"
     },
 ];
 
